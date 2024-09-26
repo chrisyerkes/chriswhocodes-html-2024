@@ -1,0 +1,14 @@
+.bs-anchor-link-nav {
+
+}
+.acf-block-preview {
+	.bs-anchor-link-nav {
+		display: flex;
+		border: 3px solid var(--wp--preset--color--accent-2);
+
+		&::before {
+			content: 'Anchor Link Navigation Will Show Here';
+			padding: 10px;
+		}
+	}
+}

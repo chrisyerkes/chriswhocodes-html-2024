@@ -1,0 +1,48 @@
+.splide__arrows {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	transform: translateY(calc(-50% - 25px));
+	z-index: 100;
+	display: flex;
+	justify-content: space-between;
+	pointer-events: none;
+
+	.splide__arrow {
+		background-color: transparent;
+		border: 1px solid var(--wp--preset--color--accent-1);
+		width: 40px;
+		height: 40px;
+		border-radius: 40px;
+		transition: 0.25s background-color;
+		cursor: pointer;
+		backdrop-filter: blur(5px);
+		pointer-events: all;
+
+		&:hover {
+			background-color: var(--wp--preset--color--accent-1);
+		}
+
+		svg {
+			transform: translateY(.15em);
+			width: 15px;
+			height: 15px;
+
+			path {
+				fill: var(--wp--preset--color--secondary);
+			}
+		}
+
+		&.splide__arrow--prev {
+			transform: translateX(75px);
+
+			svg {
+				transform: translateY(1px) rotate(-180deg);
+			}
+		}
+
+		&.splide__arrow--next {
+			transform: translateX(-75px);
+		}
+	}
+}

@@ -1,0 +1,67 @@
+.bs-case-study-image-slider {
+	.case-study-image-slider-wrapper {
+		&.arrows-white {
+			.splide__arrows {
+				.splide__arrow {
+					border-color: #fff;
+
+					svg path {
+						fill: #fff;
+					}
+					&:hover {
+						background-color: #fff;
+
+						svg path {
+							fill: var(--wp--preset--color--accent-1);
+						}
+					}
+				}
+			}
+		}
+	}
+	.case-study-image-item {
+		@include padding(68px 150px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			object-fit: contain;
+			width: 100%;
+			height: 100%;
+		}
+		&.has-both-images {
+			.case-study-image-desktop {
+				display: none;
+		
+				@include media-breakpoint-up(md) {
+					display: block;
+				}
+			}
+			.case-study-image-mobile {
+				display: none;
+		
+				img {
+					object-fit: contain;
+					width: 100%;
+					height: 100%;
+				}
+				@include media-breakpoint-down(md) {
+					display: block;
+				}
+			}
+		}
+		&.has-only-desktop-image {
+			.case-study-image-desktop {
+				display: block;
+			}
+		}
+	}
+}
+
+// Editor Styles
+.acf-block-preview {
+	.case-study-image-item:not(:first-child) {
+		display: none;
+	}
+}

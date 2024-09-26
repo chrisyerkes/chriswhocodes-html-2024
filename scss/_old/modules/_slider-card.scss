@@ -1,0 +1,127 @@
+.bs-card-slider {
+	position: relative;
+	
+	.splide__arrows {
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		transform: translateY(calc(-50% - 25px));
+		z-index: 100;
+		display: flex;
+		justify-content: space-between;
+		pointer-events: none;
+		
+		.splide__arrow {
+			background-color: transparent;
+			border: 1px solid var(--wp--preset--color--accent-1);
+			width: 40px;
+			height: 40px;
+			border-radius: 40px;
+			transition: 0.25s background-color;
+			cursor: pointer;
+			backdrop-filter: blur(5px);
+			pointer-events: all;
+
+			&:hover {
+				background-color: var(--wp--preset--color--accent-1);
+			}
+			svg {
+				transform: translateY(.15em);
+				width: 15px;
+				height: 15px;
+
+				path {
+					fill: var(--wp--preset--color--secondary);
+				}
+			}
+			&.splide__arrow--prev {
+				transform: translateX(75px);
+
+				svg {
+					transform: translateY(1px) rotate(-180deg);
+				}
+			}
+			&.splide__arrow--next {
+				transform: translateX(-75px);
+			}
+		}
+	}
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 180px;
+		z-index: 50;
+		pointer-events: none;
+	}
+	&::before {
+		left: 0;
+		background: linear-gradient(90deg, rgba-color($color-6, 1) 0%, rgba-color($color-6, 0) 100%);
+	}
+	&::after {
+		right: 0;
+		background: linear-gradient(90deg, rgba-color($color-6, 0) 0%, rgba-color($color-6, 1) 100%);
+	}
+	.splide__pagination {
+		@include padding-top(50px);
+
+		.splide__pagination__page {
+			width: 14px;
+			height: 14px;
+			border: none;
+			background-color: var(--wp--preset--color--accent-5);
+			border-radius: 14px;
+			@include margin(0 3px);
+			transition: 0.25s background-color;
+			cursor: pointer;
+
+			&:hover,
+			&.is-active {
+				background-color: var(--wp--preset--color--accent-1);
+			}
+		}
+	}
+	.card-item {
+		background-color: #fff;
+		border-radius: 17px;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+
+		.card-content-top {
+			@include padding(20px 26px);
+		}
+		.card-content-bottom {
+			@include padding(20px 26px);
+		}
+	}
+	&.choice1 {
+		.card-item {
+			.card-content-bottom {
+				background-color: var(--wp--preset--color--accent-5);
+				flex-grow: 1;
+				
+				font-size: var(--wp--preset--font-size--regular)
+			}
+		}
+	}
+}
+
+.acf-block-preview {
+	.bs-card-slider {
+		.splide__list {
+			display: flex;
+			column-gap: 20px;
+
+			.card-item {
+				width: 33.333333%;
+
+				&:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)) {
+					display: none;
+				}
+			}
+		}
+	}
+}

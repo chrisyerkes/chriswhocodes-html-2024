@@ -1,0 +1,117 @@
+.wp-block-post-title {
+	a {
+		text-decoration: inherit;
+	}
+}
+.wp-block-post-excerpt {
+	.wp-block-post-excerpt__more-link {
+		@extend .text-button;
+	}
+	&.is-style-bs2024-arrow-read-more {
+		.wp-block-post-excerpt__more-link {
+			font-size: 0;
+			color: transparent;
+			position: absolute;
+			right: 25px;
+			bottom: 25px;
+			width: 35px;
+			height: 35px;
+			border-radius: 35px;
+			border: 1px solid var(--wp--preset--color--accent-1);
+			transition: 0.25s background-color;
+
+			&.block-editor-rich-text__editable {
+				bottom: -35px;
+				right: 0;
+			}
+			&::before {
+				content: '';
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='13' fill='none'%3E%3Cpath fill='%237AC142' d='M5.595 6.5 0 1.517 1.703 0 9 6.5 1.703 13 0 11.483 5.595 6.5Z'/%3E%3C/svg%3E");
+				background-repeat: no-repeat;
+				background-size: contain;
+				position: absolute;
+				width: 9px;
+				height: 13px;
+				top: 50%;
+				left: 50%;
+				transform: translate(calc(-50% + 1px), -50%);
+			}
+			&:hover {
+				background-color: var(--wp--preset--color--accent-1);
+			}
+		}
+	}
+}
+.taxonomy-category,
+.taxonomy-case-study-type {
+	&.is-style-bs2024-category-text-button {
+		display: flex;
+		column-gap: 20px;
+		
+		a {
+			@extend .text-button;
+		}
+		.wp-block-post-terms__separator {
+			display: none;
+		}
+		&.has-white-color {
+			a {
+				color: inherit;
+
+				&:hover {
+					color: var(--wp--preset--color--secondary);
+				}
+			}
+		}
+	}
+}
+.taxonomy-case-study-type {
+	&.is-style-bs2024-category-text-button {
+		display: inline-block;
+
+		.wp-block-post-terms__separator {
+			display: inline-block;
+			font-size: var(--wp--preset--font-size--regular);
+		}
+	}
+}
+.bs-blog-feed,
+.bs-case-study-feed {
+	@extend .bs-related-articles;
+	padding-top: 0;
+	padding-bottom: 0;
+
+	.category-filter-buttons {
+		@include margin-bottom(58px);
+	}
+	ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 30px;
+		@include margin-bottom(57px);
+
+		li {
+			width: 100%;
+		}
+	}
+}
+.bs-case-study-feed {
+	@include padding-top(70px);
+}
+// Editor Block Styles
+.block-editor-block-list__block {
+	.wp-block-post-excerpt {
+		&.is-style-bs2024-arrow-read-more {
+			.wp-block-post-excerpt__more-link {
+				bottom: -35px;
+				right: 0;
+			}
+		}
+	}
+	// Blog Feed Block Editor Styles
+	// &.acf-block-preview {
+	// 	.bs-blog-feed {
+	// 		background-color: red;
+	// 	}
+	// }
+}

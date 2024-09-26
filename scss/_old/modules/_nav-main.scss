@@ -1,0 +1,12 @@
+.top-nav {
+	@include media-breakpoint-down(md) {
+		display: none !important;
+	}
+	.wp-block-navigation-link {
+		.wp-block-navigation-item__content {
+			&:hover {
+				color: var(--wp--preset--color--secondary);
+			}
+		}
+	}
+}

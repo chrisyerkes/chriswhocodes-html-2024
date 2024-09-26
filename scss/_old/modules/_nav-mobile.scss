@@ -1,0 +1,139 @@
+.mobile-menu-toggle {
+	display: none !important;
+
+	@include media-breakpoint-down(md) {
+		display: flex !important;
+	}
+	.wp-block-button__link {
+		display: flex;
+		font-size: 0;
+		color: transparent;
+		padding: 10px;
+		background-color: transparent;
+
+		&::before {
+			content: '';
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Pro 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2024 Fonticons, Inc.--%3E%3Cpath fill='%23FFFFFF' d='M0 80c0-8.8 7.2-16 16-16l416 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L16 96C7.2 96 0 88.8 0 80zM0 240c0-8.8 7.2-16 16-16l416 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L16 256c-8.8 0-16-7.2-16-16zM448 400c0 8.8-7.2 16-16 16L16 416c-8.8 0-16-7.2-16-16s7.2-16 16-16l416 0c8.8 0 16 7.2 16 16z'/%3E%3C/svg%3E");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 30px;
+			height: 30px;
+		}
+	}
+}
+.mobile-navigation {
+	display: none !important;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	padding: 38px 41px 32px;
+
+	&.is-open {
+		display: flex !important;
+	}
+	& > .wp-block-group {
+		width: 100%;
+		position: relative;
+	}
+	nav.wp-block-navigation {
+		margin-top: 0;
+		position: relative;
+		z-index: 50;
+
+		ul,
+		ul li,
+		ul li a {
+			width: 100%;
+		}
+		ul.wp-block-navigation {
+			gap: 0;
+		}
+	}
+	.wp-block-buttons:has(.mobile-menu-close) {
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 100;
+
+		.mobile-menu-close {
+			.wp-block-button__link {
+				display: flex;
+				font-size: 0;
+				color: transparent;
+				padding: 10px;
+				background-color: transparent;
+
+				&::before {
+					content: '';
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--!Font Awesome Pro 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2024 Fonticons, Inc.--%3E%3Cpath fill='%23FFFFFF' d='M324.5 411.1c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6L214.6 256l132.5-132.5c6.2-6.2 6.2-16.4 0-22.6s-16.4-6.2-22.6 0L192 233.4 59.6 100.9c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6L169.4 256 36.9 388.5c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0L192 278.6l132.5 132.5z'/%3E%3C/svg%3E");
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: center;
+					width: 30px;
+					height: 30px;
+				}
+			}
+		}
+	}
+	.wp-block-navigation-link {
+		.wp-block-navigation-item__content {
+			font-weight: 300;
+			font-size: 18px;
+			font-family: var(--wp--preset--font-family--itc-avant-garde-gothic-std);
+			padding-left: 0;
+			padding-right: 0;
+		}
+		&.is-style-bs2024-nav-outline-button {
+			.wp-block-navigation-item__content {
+				border-radius: 0;
+				border: none;
+				font-weight: 300;
+				font-size: 18px;
+				color: var(--wp--preset--color--secondary) !important;
+				padding-left: 0;
+				padding-right: 0;
+
+				&:hover {
+					background-color: transparent !important;
+					color: var(--wp--preset--color--secondary) !important;
+				}
+			}
+		}
+	}
+}
+.logged-in.admin-bar {
+	.mobile-navigation {
+		margin-top: 32px;
+		height: calc(100% - 32px);
+
+		@include media-breakpoint-down(md) {
+			margin-top: 46px;
+			height: calc(100% - 46px);
+		}
+	}
+}
+.mobile-menu-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 150;
+	background: linear-gradient(333.26deg, #512D86 8.73%, #302A46 99.53%);
+
+	&.is-open {
+		display: flex;
+	}
+}
+
+// Editor Styles
+.is-root-container {
+	.mobile-navigation {
+		background-color: var(--wp--preset--color--primary);
+	}
+}

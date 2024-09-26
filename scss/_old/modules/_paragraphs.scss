@@ -1,0 +1,15 @@
+.is-style-bs2024-paragraph-with-text-buttons {
+	a {
+		@extend .text-button;
+		font-weight: 400;
+	}
+}
+
+// Editor styles
+.is-root-container {
+	.is-style-bs2024-paragraph-with-text-buttons {
+		a {
+			text-decoration-color: var(--wp--preset--color--secondary) !important;
+		}
+	}
+}

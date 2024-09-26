@@ -1,0 +1,99 @@
+.bs-related-articles,
+.bs-related-case-studies {
+	padding-top: var(--wp--preset--spacing--extra-large);
+	padding-bottom: var(--wp--preset--spacing--3-x-large);
+
+	ul {
+		list-style: none;
+		display: flex;
+		column-gap: 30px;
+		padding: 0;
+
+		li {
+			width: 33.33333%;
+			position: relative;
+
+			.is-style-bs2024-card {
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				background-color: #fff;
+			}
+			.post-content {
+				padding-top: var(--wp--preset--spacing--small);
+				padding-right: var(--wp--preset--spacing--small);
+				padding-bottom: var(--wp--preset--spacing--small);
+				padding-left: var(--wp--preset--spacing--small);
+			}
+			.wp-block-post-title {
+				a {
+					color: var(--wp--preset--color--accent-1);
+
+					&:hover {
+						color: var(--wp--preset--color--secondary);
+					}
+				}
+			}
+			.wp-block-post-featured-image {
+				aspect-ratio: 3/2;
+				max-width: 100%;
+				overflow: hidden;
+				margin: 0;
+
+				img {
+					object-fit: cover;
+					width: 100%;
+					height: 100%;
+					object-position: center;
+				}
+			}
+		}
+	}
+}
+.bs-related-case-studies,
+.bs-case-study-feed {
+	margin-top: 0;
+
+	h3 {
+		margin-top: 0;
+	}
+	.post-content {
+		h3 {
+			margin-top: 0;
+			margin-bottom: 8px;
+		}
+		p {
+			margin: 0;
+		}
+	}
+	.is-style-bs2024-arrow-read-more {
+		padding-bottom: 40px;
+	}
+}
+
+// Editor Styles
+.acf-block-preview {
+	&.wp-block-acf-bs-related-articles,
+	&.wp-block-acf-bs-related-case-studies,
+	&.wp-block-acf-bs-case-study-feed {
+		&::before {
+			content: 'Related Posts Will Appear Here';
+			display: block;
+			padding: 30px;
+			border: 2px solid var(--wp--preset--color--accent-1);
+		}
+		.post-content {
+			position: relative;
+		}
+	}
+	&.wp-block-acf-bs-related-case-studies {
+		&::before {
+			content: 'Related Case Studies Will Appear Here';
+		}
+	}
+	&.wp-block-acf-bs-case-study-feed {
+		&::before {
+			content: 'Case Studies Will Appear Here';
+		}
+	}
+}

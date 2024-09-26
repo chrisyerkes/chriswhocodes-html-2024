@@ -1,0 +1,35 @@
+.is-style-bs2024-cover {
+	width: 100%;
+	height: 100%;
+
+	img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		object-position: center;
+	}
+}
+.wp-block-image {
+	&.is-resized {
+		img {
+			max-width: none;
+		}
+	}
+}
+
+// Editor Style
+.block-editor-block-list__block {
+	.is-style-bs2024-cover {
+		& > div {
+			height: 100% !important;
+			max-height: 100% !important;
+
+			img {
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+				object-position: center;
+			}
+		}
+	}
+}
