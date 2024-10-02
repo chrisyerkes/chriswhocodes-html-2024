@@ -1,17 +1,26 @@
-.work-grid {
-	@include rfs(100px, margin-bottom);
+.other-projects {
+	.related-project {
+		position: relative;
+		@include padding-right(15px);
+		@include padding-left(15px);
 
-	@include media-breakpoint-down(lg) {
-		column-gap: 50px !important;
-		row-gap: 30px !important;
-	}
+		@include media-breakpoint-up(sm) {
+			@include padding-right(15px);
+			@include padding-left(15px);
+		}
 
-	@include media-breakpoint-down(md) {
-		column-gap: 0 !important;
-		row-gap: 55px !important;
-	}
+		&:first-of-type {
+			@include padding-left(15px);
 
-	.work-item {
+			@include media-breakpoint-down(md) {
+				@include margin-bottom(44px);
+			}
+		}
+
+		&:last-of-type {
+			@include padding-right(15px);
+		}
+
 		.card {
 			height: 100%;
 			position: relative;
@@ -39,13 +48,13 @@
 					4px 12px 30px rgba(0, 0, 0, 0.28);
 			}
 
-			.work-image {
-				aspect-ratio: 518 / 280;
+			.related-project-image {
+				aspect-ratio: 518 / 230;
 				overflow: hidden;
 				@include padding-top(8px);
 			}
 
-			.work-description {
+			.project-details-wrap {
 				@include font-size(20px);
 				padding: rfs-fluid-value(30px) rfs-fluid-value(40px);
 
@@ -55,25 +64,25 @@
 			}
 		}
 
-		&:nth-child(4n + 1) {
+		&:nth-child(4n + 2) {
 			.card::before {
 				@include gradient-x($dark-blue, $magenta);
 			}
 		}
 
-		&:nth-child(4n + 2) {
+		&:nth-child(4n + 3) {
 			.card::before {
 				@include gradient-x($dark-cyan, $light-blue);
 			}
 		}
 
-		&:nth-child(4n + 3) {
+		&:nth-child(4n + 4) {
 			.card::before {
 				@include gradient-x($cyan, $teal);
 			}
 		}
 
-		&:nth-child(4n + 4) {
+		&:nth-child(4n + 1) {
 			.card::before {
 				@include gradient-x($yellow, $dark-magenta);
 			}

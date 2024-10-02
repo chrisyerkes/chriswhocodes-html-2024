@@ -1,14 +1,42 @@
 #main-header {
-	z-index: 100;
+	z-index: 1050;
+
+	.navbar-brand {
+		font-family: $font-family-serif;
+		@include font-size(32px);
+	}
 
 	@include media-breakpoint-down(md) {
 		pointer-events: none;
 
+		.navbar-brand,
 		.navbar-toggler {
 			pointer-events: all;
 		}
 	}
-	& > nav {
+
+	&>nav {
 		@include rfs(60px, padding-top);
+	}
+
+	&.case-study,
+	&.page {
+		&>nav>.container {
+			@include media-breakpoint-down(lg) {
+				flex-direction: column;
+
+				.navbar-brand {
+					@include margin-bottom(5px);
+				}
+			}
+
+			@include media-breakpoint-down(md) {
+				flex-direction: row-reverse;
+
+				.navbar-brand {
+					margin-bottom: 0;
+				}
+			}
+		}
 	}
 }

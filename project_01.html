@@ -18,35 +18,41 @@
 		<link href="style.css" rel="stylesheet" />
 	</head>
 	<body>
-		<header class="position-absolute w-100 top-0 start-0" id="main-header">
+		<header
+			id="main-header"
+			class="position-absolute w-100 top-0 start-0 case-study"
+		>
 			<nav class="navbar navbar-expand-md">
 				<div class="container">
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="offcanvas"
-						data-bs-target="#navbarNav"
-						aria-controls="navbarNav"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
+					<a class="navbar-brand" href="/">Chris Yerkes</a
+					><button class="navbar-toggler" type="button">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div
-						class="offcanvas offcanvas-end mobile-offcanvas"
-						data-bs-backdrop="false"
-						data-bs-scroll="true"
-						tabindex="-1"
-						id="navbarNav"
+						name="end"
+						class="offcanvas mobile-offcanvas offcanvas-md offcanvas-end"
 					>
 						<div class="offcanvas-header">
 							<button
 								type="button"
 								class="btn-close"
-								data-bs-dismiss="offcanvas"
 								aria-label="Close"
 							>
-								<i class="fa-solid fa-xmark"></i>
+								<svg
+									aria-hidden="true"
+									focusable="false"
+									data-prefix="fas"
+									data-icon="xmark"
+									class="svg-inline--fa fa-xmark"
+									role="img"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 320 512"
+								>
+									<path
+										fill="currentColor"
+										d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"
+									></path>
+								</svg>
 							</button>
 						</div>
 						<div class="offcanvas-body">
@@ -54,30 +60,59 @@
 								class="navbar-nav mx-auto mx-lg-0 ms-lg-auto h-100 main-nav"
 							>
 								<li class="nav-item">
-									<a
-										class="nav-link active"
-										aria-current="page"
-										href="#"
+									<a class="nav-link" href="/#services"
 										>Services</a
 									>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">Work</a>
+									<a class="nav-link" href="/#work">Work</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">Skills</a>
+									<a class="nav-link" href="/#skills"
+										>Skills</a
+									>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">Contact</a>
+									<a
+										class="nav-link"
+										href="/casestudy/long-island-sound-study#contact"
+										>Contact</a
+									>
 								</li>
 								<li
-									class="nav-item d-flex align-items-center mt-auto light-switch-wrap"
+									class="nav-item active d-flex align-items-center mt-auto light-switch-wrap"
 								>
-									<button class="light-switch off">
-										<span class="status-icon">
-											<i class="fa-regular fa-sun"></i>
-											<i class="fa-solid fa-moon"></i>
-										</span>
+									<button class="light-switch active">
+										<span class="status-icon"
+											><svg
+												aria-hidden="true"
+												focusable="false"
+												data-prefix="far"
+												data-icon="sun"
+												class="svg-inline--fa fa-sun"
+												role="img"
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 512 512"
+											>
+												<path
+													fill="currentColor"
+													d="M505.2 324.8l-47.73-68.78l47.75-68.81c7.359-10.62 8.797-24.12 3.844-36.06c-4.969-11.94-15.52-20.44-28.22-22.72l-82.39-14.88l-14.89-82.41c-2.281-12.72-10.76-23.25-22.69-28.22c-11.97-4.936-25.42-3.498-36.12 3.844L256 54.49L187.2 6.709C176.5-.6016 163.1-2.039 151.1 2.896c-11.92 4.971-20.4 15.5-22.7 28.19l-14.89 82.44L31.15 128.4C18.42 130.7 7.854 139.2 2.9 151.2C-2.051 163.1-.5996 176.6 6.775 187.2l47.73 68.78l-47.75 68.81c-7.359 10.62-8.795 24.12-3.844 36.06c4.969 11.94 15.52 20.44 28.22 22.72l82.39 14.88l14.89 82.41c2.297 12.72 10.78 23.25 22.7 28.22c11.95 4.906 25.44 3.531 36.09-3.844L256 457.5l68.83 47.78C331.3 509.7 338.8 512 346.3 512c4.906 0 9.859-.9687 14.56-2.906c11.92-4.969 20.4-15.5 22.7-28.19l14.89-82.44l82.37-14.88c12.73-2.281 23.3-10.78 28.25-22.75C514.1 348.9 512.6 335.4 505.2 324.8zM456.8 339.2l-99.61 18l-18 99.63L256 399.1L172.8 456.8l-18-99.63l-99.61-18L112.9 255.1L55.23 172.8l99.61-18l18-99.63L256 112.9l83.15-57.75l18.02 99.66l99.61 18L399.1 255.1L456.8 339.2zM256 143.1c-61.85 0-111.1 50.14-111.1 111.1c0 61.85 50.15 111.1 111.1 111.1s111.1-50.14 111.1-111.1C367.1 194.1 317.8 143.1 256 143.1zM256 319.1c-35.28 0-63.99-28.71-63.99-63.99S220.7 192 256 192s63.99 28.71 63.99 63.1S291.3 319.1 256 319.1z"
+												></path></svg
+											><svg
+												aria-hidden="true"
+												focusable="false"
+												data-prefix="fas"
+												data-icon="moon"
+												class="svg-inline--fa fa-moon"
+												role="img"
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 384 512"
+											>
+												<path
+													fill="currentColor"
+													d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
+												></path></svg
+										></span>
 									</button>
 								</li>
 							</ul>
@@ -86,585 +121,1968 @@
 				</div>
 			</nav>
 		</header>
-		<section class="content-section hero">
+		<section
+			class="content-section case-study-content-section case-study-header hero"
+		>
 			<div class="container">
-				<div class="row social-row">
+				<div class="row">
 					<div class="col">
-						<svg
-							version="1.1"
-							xmlns="http://www.w3.org/2000/svg"
-							class="svg-settings"
-						>
-							<defs>
-								<linearGradient
-									id="linear-green-blue"
-									gradientTransform="rotate(90)"
-									x1="0%"
-									y1="0%"
-									x2="100%"
-									y2="0%"
-								>
-									<stop
-										class="linear-stop1"
-										offset="0%"
-									></stop>
-									<stop
-										class="linear-stop2"
-										offset="100%"
-									></stop>
-								</linearGradient>
-								<linearGradient
-									id="linear-yellow-pink"
-									gradientTransform="rotate(110)"
-									x1="0%"
-									y1="0%"
-									x2="100%"
-									y2="0%"
-								>
-									<stop
-										class="linear-stop1"
-										offset="0%"
-									></stop>
-									<stop
-										class="linear-stop2"
-										offset="100%"
-									></stop>
-								</linearGradient>
-								<linearGradient
-									id="linear-pink-blue"
-									gradientTransform="rotate(110)"
-									x1="0%"
-									y1="0%"
-									x2="100%"
-									y2="0%"
-								>
-									<stop
-										class="linear-stop1"
-										offset="0%"
-									></stop>
-									<stop
-										class="linear-stop2"
-										offset="100%"
-									></stop>
-								</linearGradient>
-								<linearGradient
-									id="linear-teal-blue"
-									gradientTransform="rotate(110)"
-									x1="0%"
-									y1="0%"
-									x2="100%"
-									y2="0%"
-								>
-									<stop
-										class="linear-stop1"
-										offset="0%"
-									></stop>
-									<stop
-										class="linear-stop2"
-										offset="100%"
-									></stop>
-								</linearGradient>
-							</defs>
-						</svg>
-						<ul
-							class="nav social-nav justify-content-end d-md-none d-lg-flex justify-content-lg-start"
-						>
-							<li class="nav-item linkedin">
-								<a href="#" class="nav-link">
-									<i class="fab fa-linkedin-in"></i>
-								</a>
-							</li>
-							<li class="nav-item github">
-								<a href="#" class="nav-link">
-									<i class="fa-brands fa-github"></i>
-								</a>
-							</li>
-							<li class="nav-item codepen">
-								<a href="#" class="nav-link">
-									<i class="fa-brands fa-codepen"></i>
-								</a>
-							</li>
-							<li class="nav-item twitter">
-								<a href="#" class="nav-link">
-									<i class="fab fa-twitter"></i>
-								</a>
-							</li>
+						<h1 class="case-study-title">
+							Long Island Sound Study
+						</h1>
+						<article class="col-md-10">
+							<p>
+								In 1985, the EPA, New York, and Connecticut
+								formed the Long Island Sound Study (LISS), a
+								bi-state partnership consisting of federal and
+								state agencies, user groups, concerned
+								organizations, and individuals dedicated to
+								restoring and protecting the Sound. While I was
+								employed at Taylor Design, I oversaw three
+								versions of the LISS website.
+							</p>
+						</article>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-4">
+						<h4>Industry</h4>
+						<ul class="industry-list">
+							<li>Non-profit</li>
+							<li>Government</li>
+							<li>Environment</li>
 						</ul>
 					</div>
-				</div>
-				<div class="row row-cols-1 row-cols-lg-2 align-items-center">
-					<div class="col-lg-7 order-last order-lg-first hero-left">
-						<div class="row">
-							<div class="col">
-								<h1
-									class="d-none d-lg-block hero-title animation-toggle"
-								>
-									Chris Yerkes
-								</h1>
-								<p class="hero-subtitle">
-									Front end developer specializing in lorem
-									ipsum. I enjoy creating dolor sit amet and
-									experimenting with felis faucibus.
-								</p>
-								<p class="m-0 text-center text-lg-start">
-									<a
-										href="#"
-										class="btn btn-link has-arrow-right has-gradient-1"
-									>
-										Get in Touch
-										<i class="fa-solid fa-arrow-right"></i>
-									</a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-5 hero-right">
-						<p class="h1 d-lg-none hero-title text-center">
-							Chris Yerkes
-						</p>
-
-						<ul
-							class="nav social-nav d-none d-md-flex d-lg-none justify-content-center"
-						>
-							<li class="nav-item linkedin">
-								<a href="#" class="nav-link">
-									<i class="fab fa-linkedin-in"></i>
-								</a>
-							</li>
-							<li class="nav-item github">
-								<a href="#" class="nav-link">
-									<i class="fa-brands fa-github"></i>
-								</a>
-							</li>
-							<li class="nav-item codepen">
-								<a href="#" class="nav-link">
-									<i class="fa-brands fa-codepen"></i>
-								</a>
-							</li>
-							<li class="nav-item twitter">
-								<a href="#" class="nav-link">
-									<i class="fab fa-twitter"></i>
-								</a>
-							</li>
+					<div class="col-sm-6 col-md-4">
+						<h4>Tech Stack</h4>
+						<ul class="checkstack-list">
+							<li>WordPress</li>
+							<li>PHP</li>
+							<li>Bootstrap</li>
 						</ul>
 					</div>
-				</div>
-			</div>
-		</section>
-		<section class="content-section services">
-			<div class="container">
-				<div class="row">
-					<div class="col text-center">
-						<h2 class="section-title">Services I offer</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<div class="services-slider">
-							<div class="single-service text-center">
-								<div class="card">
-									<div
-										class="service-icon d-flex align-items-center justify-content-center mx-auto"
-									>
-										<i
-											class="fa-brands fa-wordpress-simple"
-										></i>
-									</div>
-									<h4>WordPress Consulting</h4>
-									<p>
-										Do you need help with your current
-										WordPress website? Or have a need for an
-										expert to help you bring your WordPress
-										project to life? I&rsquo;m your guy.
-									</p>
-								</div>
-							</div>
-							<div class="single-service text-center">
-								<div class="card">
-									<div
-										class="service-icon d-flex align-items-center justify-content-center mx-auto"
-									>
-										<i
-											class="fa-solid fa-business-time"
-										></i>
-									</div>
-									<h4>WordPress Agency Sub-Contractor</h4>
-									<p>
-										Are you a web design agency looking for
-										someone to bring your designs to life in
-										the WordPress CMS for your clients? I
-										can take your finished designs and
-										develop a fully responsive and search
-										engine optimized WordPress website.
-									</p>
-								</div>
-							</div>
-							<div class="single-service text-center">
-								<div class="card">
-									<div
-										class="service-icon d-flex align-items-center justify-content-center mx-auto"
-									>
-										<i class="fa-solid fa-code"></i>
-									</div>
-									<h4>WordPress Whole Site Development</h4>
-									<p>
-										I have been building fully scoped
-										WordPress websites for over 15 years. I
-										have the experience to help you from any
-										stage of your WordPress site development
-										and bring it over the finish line.
-									</p>
-								</div>
-							</div>
-							<div class="single-service text-center">
-								<div class="card">
-									<div
-										class="service-icon d-flex align-items-center justify-content-center mx-auto"
-									>
-										<i class="fa-solid fa-bolt"></i>
-									</div>
-									<h4>Headless WordPress Development</h4>
-									<p>
-										The future of WordPress websites. Get
-										the fastest performance possible by
-										requesting a headless WordPress website.
-										This website is headless!
-									</p>
-								</div>
-							</div>
-							<div class="single-service text-center">
-								<div class="card">
-									<div
-										class="service-icon d-flex align-items-center justify-content-center mx-auto"
-									>
-										<i
-											class="fa-solid fa-wand-magic-sparkles"
-										></i>
-									</div>
-									<h4>WordPress Theme Customization</h4>
-									<p>
-										If you&rsquo;re looking for some help
-										customizing a great theme you already
-										have installed and running on your
-										WordPress website that just needs a
-										little extra &ldquo;something,&rdquo;
-										let me help you shape the look and the
-										functionality to your vision.
-									</p>
-								</div>
-							</div>
-							<div class="single-service text-center">
-								<div class="card">
-									<div
-										class="service-icon d-flex align-items-center justify-content-center mx-auto"
-									>
-										<i class="fa-solid fa-wrench"></i>
-									</div>
-									<h4>WordPress Website Maintenance</h4>
-									<p>
-										If you already have a WordPress website
-										and need help with content or
-										functionality updates, I can help.
-										I&rsquo;ve successfully helped hundreds
-										of clients manage their websites in my
-										15+ years of experience.
-									</p>
-								</div>
-							</div>
-							<div class="single-service text-center">
-								<div class="card">
-									<div
-										class="service-icon d-flex align-items-center justify-content-center mx-auto"
-									>
-										<i class="fa-solid fa-plug"></i>
-									</div>
-									<h4>WordPress Plugin Development</h4>
-									<p>
-										Sometimes the plugin you want, or need,
-										doesn&rsquo;t exist despite
-										WordPress&rsquo;s massive plugin
-										library. Let me help develop one from
-										scratch, or I can help you find the
-										perfect off-the-shelf solution.
-									</p>
-								</div>
-							</div>
-							<div class="single-service text-center">
-								<div class="card">
-									<div
-										class="service-icon d-flex align-items-center justify-content-center mx-auto"
-									>
-										<i class="fa-solid fa-palette"></i>
-									</div>
-									<h4>WordPress Website Design</h4>
-									<p>
-										While I do not design websites myself (I
-										just write code for them), I have many,
-										many talented web design partners that I
-										work with that do.
-									</p>
-								</div>
-							</div>
-							<div class="single-service text-center">
-								<div class="card">
-									<div
-										class="service-icon d-flex align-items-center justify-content-center mx-auto"
-									>
-										<i class="fa-regular fa-file-code"></i>
-									</div>
-									<h4>General Web Development</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="content-section has-tinted-background my-work">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<h2 class="section-title">View my work</h2>
-						<div
-							class="work-wrapper d-block d-lg-flex featured-work"
-						>
-							<div class="featured-work-image">
-								<img
-									src="images/fpo_featured-work.jpg"
-									alt="Featured Work"
-									class="img-fluid"
-								/>
-							</div>
-							<div class="featured-work-description">
-								<h5>Featured</h5>
-								<div
-									class="d-flex flex-column justify-content-center h-100 description-wrapper"
-								>
-									<h3>Coffee by Benjamin</h3>
-									<p>
-										An e-commerce application built with
-										React & Shopify for a coffee roasting
-										company.
-									</p>
-									<p>
-										<a
-											href="#"
-											class="btn btn-link btn-link-sm stretched-link has-arrow-right"
-											>View Project
-											<i
-												class="fa-solid fa-arrow-right"
-											></i
-										></a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="grid work-grid" style="--bs-gap: 80px 74px">
-					<div class="g-col-12 g-col-md-6 work-item">
-						<div class="card">
-							<div class="work-image">
-								<img
-									src="images/fpo_work-item.jpg"
-									alt="Work Item"
-									class="img-fluid"
-								/>
-							</div>
-							<div class="work-description">
-								<h3>Project Two</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit. Donec eget ex euismod,
-									scelerisque nisi eu, consectetur nisi.
-								</p>
-								<p>
-									<a
-										href="#"
-										class="btn stretched-link btn-link btn-link-sm"
-										>View Project
-										<i class="fa-solid fa-arrow-right"></i
-									></a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="g-col-12 g-col-md-6 work-item">
-						<div class="card">
-							<div class="work-image">
-								<img
-									src="images/fpo_work-item.jpg"
-									alt="Work Item"
-									class="img-fluid"
-								/>
-							</div>
-							<div class="work-description">
-								<h3>Project Three</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit. Donec eget ex euismod,
-									scelerisque nisi eu, consectetur nisi.
-								</p>
-								<p>
-									<a
-										href="#"
-										class="btn stretched-link btn-link btn-link-sm"
-										>View Project
-										<i class="fa-solid fa-arrow-right"></i
-									></a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="g-col-12 g-col-md-6 work-item">
-						<div class="card">
-							<div class="work-image">
-								<img
-									src="images/fpo_work-item.jpg"
-									alt="Work Item"
-									class="img-fluid"
-								/>
-							</div>
-							<div class="work-description">
-								<h3>Project Four</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit. Donec eget ex euismod,
-									scelerisque nisi eu, consectetur nisi.
-								</p>
-								<p>
-									<a
-										href="#"
-										class="btn stretched-link btn-link btn-link-sm"
-										>View Project
-										<i class="fa-solid fa-arrow-right"></i
-									></a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="g-col-12 g-col-md-6 work-item">
-						<div class="card">
-							<div class="work-image">
-								<img
-									src="images/fpo_work-item.jpg"
-									alt="Work Item"
-									class="img-fluid"
-								/>
-							</div>
-							<div class="work-description">
-								<h3>Project Five</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit. Donec eget ex euismod,
-									scelerisque nisi eu, consectetur nisi.
-								</p>
-								<p>
-									<a
-										href="#"
-										class="btn stretched-link btn-link btn-link-sm"
-										>View Project
-										<i class="fa-solid fa-arrow-right"></i
-									></a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col text-center">
-						<p class="rgb-button-wrap">
-							<a
-								href="#"
-								class="btn btn-gradient has-btn-gradient-1"
+					<div class="col-md-4 mt-4 mt-md-0 mb-1 mb-md-0">
+						<h4>Project Link</h4>
+						<a
+							href="https://www.longislandsoundstudy.net"
+							class="btn btn-link has-arrow-right has-gradient-1"
+							>View Project
+							<svg
+								aria-hidden="true"
+								focusable="false"
+								data-prefix="fas"
+								data-icon="arrow-right"
+								class="svg-inline--fa fa-arrow-right"
+								role="img"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 448 512"
 							>
-								View All Projects
-							</a>
-							<span></span>
-						</p>
+								<path
+									fill="currentColor"
+									d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+								></path></svg
+						></a>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="content-section my-skills">
+		<section
+			class="content-section case-study-content-section case-study-featured-image"
+		>
 			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<h2 class="section-title">My skills</h2>
+				<div class="row content-section">
+					<div class="col project-featured-image">
+						<div
+							class="has-browser-chrome main-image-desktop-wrapper"
+						>
+							<span
+								style="
+									box-sizing: border-box;
+									display: block;
+									overflow: hidden;
+									width: initial;
+									height: initial;
+									background: none;
+									opacity: 1;
+									border: 0;
+									margin: 0;
+									padding: 0;
+									position: relative;
+								"
+								><span
+									style="
+										box-sizing: border-box;
+										display: block;
+										width: initial;
+										height: initial;
+										background: none;
+										opacity: 1;
+										border: 0;
+										margin: 0;
+										padding: 0;
+										padding-top: 81.56547183613753%;
+									"
+								></span
+								><img
+									alt=""
+									src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound.png&amp;w=3840&amp;q=75"
+									decoding="async"
+									data-nimg="responsive"
+									class="img-fluid main-image-desktop"
+									style="
+										position: absolute;
+										top: 0;
+										left: 0;
+										bottom: 0;
+										right: 0;
+										box-sizing: border-box;
+										padding: 0;
+										border: none;
+										margin: auto;
+										display: block;
+										width: 0;
+										height: 0;
+										min-width: 100%;
+										max-width: 100%;
+										min-height: 100%;
+										max-height: 100%;
+									"
+									sizes="100vw"
+									srcset="
+										/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound.png&amp;w=640&amp;q=75   640w,
+										/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound.png&amp;w=750&amp;q=75   750w,
+										/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound.png&amp;w=828&amp;q=75   828w,
+										/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound.png&amp;w=1080&amp;q=75 1080w,
+										/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound.png&amp;w=1200&amp;q=75 1200w,
+										/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound.png&amp;w=1920&amp;q=75 1920w,
+										/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound.png&amp;w=2048&amp;q=75 2048w,
+										/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound.png&amp;w=3840&amp;q=75 3840w
+									" /><noscript
+									><img
+										alt=""
+										sizes="100vw"
+										srcset="
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound.png&amp;w=640&amp;q=75   640w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound.png&amp;w=750&amp;q=75   750w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound.png&amp;w=828&amp;q=75   828w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound.png&amp;w=1080&amp;q=75 1080w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound.png&amp;w=1200&amp;q=75 1200w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound.png&amp;w=1920&amp;q=75 1920w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound.png&amp;w=2048&amp;q=75 2048w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound.png&amp;w=3840&amp;q=75 3840w
+										"
+										src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound.png&amp;w=3840&amp;q=75"
+										decoding="async"
+										data-nimg="responsive"
+										style="
+											position: absolute;
+											top: 0;
+											left: 0;
+											bottom: 0;
+											right: 0;
+											box-sizing: border-box;
+											padding: 0;
+											border: none;
+											margin: auto;
+											display: block;
+											width: 0;
+											height: 0;
+											min-width: 100%;
+											max-width: 100%;
+											min-height: 100%;
+											max-height: 100%;
+										"
+										class="img-fluid main-image-desktop"
+										loading="lazy" /></noscript
+							></span>
+						</div>
+						<div class="main-image-mobile-wrapper">
+							<span
+								style="
+									box-sizing: border-box;
+									display: inline-block;
+									overflow: hidden;
+									width: initial;
+									height: initial;
+									background: none;
+									opacity: 1;
+									border: 0;
+									margin: 0;
+									padding: 0;
+									position: relative;
+									max-width: 100%;
+								"
+								><span
+									style="
+										box-sizing: border-box;
+										display: block;
+										width: initial;
+										height: initial;
+										background: none;
+										opacity: 1;
+										border: 0;
+										margin: 0;
+										padding: 0;
+										max-width: 100%;
+									"
+									><img
+										style="
+											display: block;
+											max-width: 100%;
+											width: initial;
+											height: initial;
+											background: none;
+											opacity: 1;
+											border: 0;
+											margin: 0;
+											padding: 0;
+										"
+										alt=""
+										aria-hidden="true"
+										src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27393%27%20height=%27851%27/%3e" /></span
+								><img
+									alt=""
+									src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound-mobile.png&amp;w=828&amp;q=75"
+									decoding="async"
+									data-nimg="intrinsic"
+									class="img-fluid main-image-mobile"
+									style="
+										position: absolute;
+										top: 0;
+										left: 0;
+										bottom: 0;
+										right: 0;
+										box-sizing: border-box;
+										padding: 0;
+										border: none;
+										margin: auto;
+										display: block;
+										width: 0;
+										height: 0;
+										min-width: 100%;
+										max-width: 100%;
+										min-height: 100%;
+										max-height: 100%;
+									"
+									srcset="
+										/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound-mobile.png&amp;w=640&amp;q=75 1x,
+										/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound-mobile.png&amp;w=828&amp;q=75 2x
+									" /><noscript
+									><img
+										alt=""
+										srcset="
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound-mobile.png&amp;w=640&amp;q=75 1x,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound-mobile.png&amp;w=828&amp;q=75 2x
+										"
+										src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound-mobile.png&amp;w=828&amp;q=75"
+										decoding="async"
+										data-nimg="intrinsic"
+										style="
+											position: absolute;
+											top: 0;
+											left: 0;
+											bottom: 0;
+											right: 0;
+											box-sizing: border-box;
+											padding: 0;
+											border: none;
+											margin: auto;
+											display: block;
+											width: 0;
+											height: 0;
+											min-width: 100%;
+											max-width: 100%;
+											min-height: 100%;
+											max-height: 100%;
+										"
+										class="img-fluid main-image-mobile"
+										loading="lazy" /></noscript
+							></span>
+						</div>
 					</div>
-					<div class="col-md-8">
-						<ul class="skills-list grid">
-							<li class="g-col-12 g-col-sm-6">
-								<div class="bullet">
-									<i class="fa-solid fa-circle-check"></i>
-								</div>
-								HTML
+				</div>
+			</div>
+		</section>
+		<section
+			class="content-section case-study-content-section project-goals"
+		>
+			<div class="container">
+				<div class="row content-section">
+					<article class="col-md-10 project-goals-text">
+						<h2>Project Goals</h2>
+						<p>
+							During each redevelopment of the Long Island Sound
+							Study website, the goals have pretty much remained
+							the same, just updating a bit with the times. The
+							site serves as a learning portal for many different
+							audiences, including the public, education,
+							government, and scientific communities. We had to
+							make the website offer valuable information to each
+							audience and that was no small task.
+						</p>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section
+			class="content-section case-study-content-section has-blue-bg project-mini-gallery"
+		>
+			<div class="container">
+				<div class="row content-section">
+					<div class="col-lg-6">
+						<ul class="case-study-mini-gallery-list evens">
+							<li
+								data-image="cG9zdDoyMTU="
+								class="has-browser-chrome"
+							>
+								<span
+									style="
+										box-sizing: border-box;
+										display: block;
+										overflow: hidden;
+										width: initial;
+										height: initial;
+										background: none;
+										opacity: 1;
+										border: 0;
+										margin: 0;
+										padding: 0;
+										position: relative;
+									"
+									><span
+										style="
+											box-sizing: border-box;
+											display: block;
+											width: initial;
+											height: initial;
+											background: none;
+											opacity: 1;
+											border: 0;
+											margin: 0;
+											padding: 0;
+											padding-top: 70.55288461538461%;
+										"
+									></span
+									><img
+										alt=""
+										src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462629153-1.png&amp;w=3840&amp;q=75"
+										decoding="async"
+										data-nimg="responsive"
+										class="img-fluid"
+										style="
+											position: absolute;
+											top: 0;
+											left: 0;
+											bottom: 0;
+											right: 0;
+											box-sizing: border-box;
+											padding: 0;
+											border: none;
+											margin: auto;
+											display: block;
+											width: 0;
+											height: 0;
+											min-width: 100%;
+											max-width: 100%;
+											min-height: 100%;
+											max-height: 100%;
+										"
+										sizes="100vw"
+										srcset="
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462629153-1.png&amp;w=640&amp;q=75   640w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462629153-1.png&amp;w=750&amp;q=75   750w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462629153-1.png&amp;w=828&amp;q=75   828w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462629153-1.png&amp;w=1080&amp;q=75 1080w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462629153-1.png&amp;w=1200&amp;q=75 1200w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462629153-1.png&amp;w=1920&amp;q=75 1920w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462629153-1.png&amp;w=2048&amp;q=75 2048w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462629153-1.png&amp;w=3840&amp;q=75 3840w
+										" /><noscript
+										><img
+											alt=""
+											sizes="100vw"
+											srcset="
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462629153-1.png&amp;w=640&amp;q=75   640w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462629153-1.png&amp;w=750&amp;q=75   750w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462629153-1.png&amp;w=828&amp;q=75   828w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462629153-1.png&amp;w=1080&amp;q=75 1080w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462629153-1.png&amp;w=1200&amp;q=75 1200w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462629153-1.png&amp;w=1920&amp;q=75 1920w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462629153-1.png&amp;w=2048&amp;q=75 2048w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462629153-1.png&amp;w=3840&amp;q=75 3840w
+											"
+											src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462629153-1.png&amp;w=3840&amp;q=75"
+											decoding="async"
+											data-nimg="responsive"
+											style="
+												position: absolute;
+												top: 0;
+												left: 0;
+												bottom: 0;
+												right: 0;
+												box-sizing: border-box;
+												padding: 0;
+												border: none;
+												margin: auto;
+												display: block;
+												width: 0;
+												height: 0;
+												min-width: 100%;
+												max-width: 100%;
+												min-height: 100%;
+												max-height: 100%;
+											"
+											class="img-fluid"
+											loading="lazy" /></noscript
+								></span>
 							</li>
-							<li class="g-col-12 g-col-sm-6">
-								<div class="bullet">
-									<i class="fa-solid fa-circle-check"></i>
-								</div>
-								CSS
+							<li
+								data-image="cG9zdDoyMTc="
+								class="has-browser-chrome"
+							>
+								<span
+									style="
+										box-sizing: border-box;
+										display: block;
+										overflow: hidden;
+										width: initial;
+										height: initial;
+										background: none;
+										opacity: 1;
+										border: 0;
+										margin: 0;
+										padding: 0;
+										position: relative;
+									"
+									><span
+										style="
+											box-sizing: border-box;
+											display: block;
+											width: initial;
+											height: initial;
+											background: none;
+											opacity: 1;
+											border: 0;
+											margin: 0;
+											padding: 0;
+											padding-top: 155.2283653846154%;
+										"
+									></span
+									><img
+										alt=""
+										src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463224408-1.png&amp;w=3840&amp;q=75"
+										decoding="async"
+										data-nimg="responsive"
+										class="img-fluid"
+										style="
+											position: absolute;
+											top: 0;
+											left: 0;
+											bottom: 0;
+											right: 0;
+											box-sizing: border-box;
+											padding: 0;
+											border: none;
+											margin: auto;
+											display: block;
+											width: 0;
+											height: 0;
+											min-width: 100%;
+											max-width: 100%;
+											min-height: 100%;
+											max-height: 100%;
+										"
+										sizes="100vw"
+										srcset="
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463224408-1.png&amp;w=640&amp;q=75   640w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463224408-1.png&amp;w=750&amp;q=75   750w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463224408-1.png&amp;w=828&amp;q=75   828w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463224408-1.png&amp;w=1080&amp;q=75 1080w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463224408-1.png&amp;w=1200&amp;q=75 1200w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463224408-1.png&amp;w=1920&amp;q=75 1920w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463224408-1.png&amp;w=2048&amp;q=75 2048w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463224408-1.png&amp;w=3840&amp;q=75 3840w
+										" /><noscript
+										><img
+											alt=""
+											sizes="100vw"
+											srcset="
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463224408-1.png&amp;w=640&amp;q=75   640w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463224408-1.png&amp;w=750&amp;q=75   750w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463224408-1.png&amp;w=828&amp;q=75   828w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463224408-1.png&amp;w=1080&amp;q=75 1080w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463224408-1.png&amp;w=1200&amp;q=75 1200w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463224408-1.png&amp;w=1920&amp;q=75 1920w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463224408-1.png&amp;w=2048&amp;q=75 2048w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463224408-1.png&amp;w=3840&amp;q=75 3840w
+											"
+											src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463224408-1.png&amp;w=3840&amp;q=75"
+											decoding="async"
+											data-nimg="responsive"
+											style="
+												position: absolute;
+												top: 0;
+												left: 0;
+												bottom: 0;
+												right: 0;
+												box-sizing: border-box;
+												padding: 0;
+												border: none;
+												margin: auto;
+												display: block;
+												width: 0;
+												height: 0;
+												min-width: 100%;
+												max-width: 100%;
+												min-height: 100%;
+												max-height: 100%;
+											"
+											class="img-fluid"
+											loading="lazy" /></noscript
+								></span>
 							</li>
-							<li class="g-col-12 g-col-sm-6">
-								<div class="bullet">
-									<i class="fa-solid fa-circle-check"></i>
-								</div>
-								JavaScript
+							<li
+								data-image="cG9zdDoyMTk="
+								class="has-browser-chrome"
+							>
+								<span
+									style="
+										box-sizing: border-box;
+										display: block;
+										overflow: hidden;
+										width: initial;
+										height: initial;
+										background: none;
+										opacity: 1;
+										border: 0;
+										margin: 0;
+										padding: 0;
+										position: relative;
+									"
+									><span
+										style="
+											box-sizing: border-box;
+											display: block;
+											width: initial;
+											height: initial;
+											background: none;
+											opacity: 1;
+											border: 0;
+											margin: 0;
+											padding: 0;
+											padding-top: 210.09615384615384%;
+										"
+									></span
+									><img
+										alt=""
+										src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+										decoding="async"
+										data-nimg="responsive"
+										class="img-fluid"
+										style="
+											position: absolute;
+											top: 0;
+											left: 0;
+											bottom: 0;
+											right: 0;
+											box-sizing: border-box;
+											padding: 0;
+											border: none;
+											margin: auto;
+											display: block;
+											width: 0;
+											height: 0;
+											min-width: 100%;
+											max-width: 100%;
+											min-height: 100%;
+											max-height: 100%;
+										" /><noscript
+										><img
+											alt=""
+											sizes="100vw"
+											srcset="
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463154004-1.png&amp;w=640&amp;q=75   640w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463154004-1.png&amp;w=750&amp;q=75   750w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463154004-1.png&amp;w=828&amp;q=75   828w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463154004-1.png&amp;w=1080&amp;q=75 1080w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463154004-1.png&amp;w=1200&amp;q=75 1200w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463154004-1.png&amp;w=1920&amp;q=75 1920w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463154004-1.png&amp;w=2048&amp;q=75 2048w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463154004-1.png&amp;w=3840&amp;q=75 3840w
+											"
+											src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463154004-1.png&amp;w=3840&amp;q=75"
+											decoding="async"
+											data-nimg="responsive"
+											style="
+												position: absolute;
+												top: 0;
+												left: 0;
+												bottom: 0;
+												right: 0;
+												box-sizing: border-box;
+												padding: 0;
+												border: none;
+												margin: auto;
+												display: block;
+												width: 0;
+												height: 0;
+												min-width: 100%;
+												max-width: 100%;
+												min-height: 100%;
+												max-height: 100%;
+											"
+											class="img-fluid"
+											loading="lazy" /></noscript
+								></span>
 							</li>
-							<li class="g-col-12 g-col-sm-6">
-								<div class="bullet">
-									<i class="fa-solid fa-circle-check"></i>
-								</div>
-								PHP
+						</ul>
+					</div>
+					<div class="col-lg-6">
+						<ul class="case-study-mini-gallery-list odds">
+							<li
+								data-image="cG9zdDoyMTY="
+								class="has-browser-chrome"
+							>
+								<span
+									style="
+										box-sizing: border-box;
+										display: block;
+										overflow: hidden;
+										width: initial;
+										height: initial;
+										background: none;
+										opacity: 1;
+										border: 0;
+										margin: 0;
+										padding: 0;
+										position: relative;
+									"
+									><span
+										style="
+											box-sizing: border-box;
+											display: block;
+											width: initial;
+											height: initial;
+											background: none;
+											opacity: 1;
+											border: 0;
+											margin: 0;
+											padding: 0;
+											padding-top: 272.3170731707317%;
+										"
+									></span
+									><img
+										alt=""
+										src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462803669-1.png&amp;w=3840&amp;q=75"
+										decoding="async"
+										data-nimg="responsive"
+										class="img-fluid"
+										style="
+											position: absolute;
+											top: 0;
+											left: 0;
+											bottom: 0;
+											right: 0;
+											box-sizing: border-box;
+											padding: 0;
+											border: none;
+											margin: auto;
+											display: block;
+											width: 0;
+											height: 0;
+											min-width: 100%;
+											max-width: 100%;
+											min-height: 100%;
+											max-height: 100%;
+										"
+										sizes="100vw"
+										srcset="
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462803669-1.png&amp;w=640&amp;q=75   640w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462803669-1.png&amp;w=750&amp;q=75   750w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462803669-1.png&amp;w=828&amp;q=75   828w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462803669-1.png&amp;w=1080&amp;q=75 1080w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462803669-1.png&amp;w=1200&amp;q=75 1200w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462803669-1.png&amp;w=1920&amp;q=75 1920w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462803669-1.png&amp;w=2048&amp;q=75 2048w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462803669-1.png&amp;w=3840&amp;q=75 3840w
+										" /><noscript
+										><img
+											alt=""
+											sizes="100vw"
+											srcset="
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462803669-1.png&amp;w=640&amp;q=75   640w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462803669-1.png&amp;w=750&amp;q=75   750w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462803669-1.png&amp;w=828&amp;q=75   828w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462803669-1.png&amp;w=1080&amp;q=75 1080w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462803669-1.png&amp;w=1200&amp;q=75 1200w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462803669-1.png&amp;w=1920&amp;q=75 1920w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462803669-1.png&amp;w=2048&amp;q=75 2048w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462803669-1.png&amp;w=3840&amp;q=75 3840w
+											"
+											src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462803669-1.png&amp;w=3840&amp;q=75"
+											decoding="async"
+											data-nimg="responsive"
+											style="
+												position: absolute;
+												top: 0;
+												left: 0;
+												bottom: 0;
+												right: 0;
+												box-sizing: border-box;
+												padding: 0;
+												border: none;
+												margin: auto;
+												display: block;
+												width: 0;
+												height: 0;
+												min-width: 100%;
+												max-width: 100%;
+												min-height: 100%;
+												max-height: 100%;
+											"
+											class="img-fluid"
+											loading="lazy" /></noscript
+								></span>
 							</li>
-							<li class="g-col-12 g-col-sm-6">
-								<div class="bullet">
-									<i class="fa-solid fa-circle-check"></i>
-								</div>
-								WordPress
+							<li
+								data-image="cG9zdDoyMTg="
+								class="has-browser-chrome"
+							>
+								<span
+									style="
+										box-sizing: border-box;
+										display: block;
+										overflow: hidden;
+										width: initial;
+										height: initial;
+										background: none;
+										opacity: 1;
+										border: 0;
+										margin: 0;
+										padding: 0;
+										position: relative;
+									"
+									><span
+										style="
+											box-sizing: border-box;
+											display: block;
+											width: initial;
+											height: initial;
+											background: none;
+											opacity: 1;
+											border: 0;
+											margin: 0;
+											padding: 0;
+											padding-top: 67.12740384615384%;
+										"
+									></span
+									><img
+										alt=""
+										src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+										decoding="async"
+										data-nimg="responsive"
+										class="img-fluid"
+										style="
+											position: absolute;
+											top: 0;
+											left: 0;
+											bottom: 0;
+											right: 0;
+											box-sizing: border-box;
+											padding: 0;
+											border: none;
+											margin: auto;
+											display: block;
+											width: 0;
+											height: 0;
+											min-width: 100%;
+											max-width: 100%;
+											min-height: 100%;
+											max-height: 100%;
+										" /><noscript
+										><img
+											alt=""
+											sizes="100vw"
+											srcset="
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462999283-1.png&amp;w=640&amp;q=75   640w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462999283-1.png&amp;w=750&amp;q=75   750w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462999283-1.png&amp;w=828&amp;q=75   828w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462999283-1.png&amp;w=1080&amp;q=75 1080w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462999283-1.png&amp;w=1200&amp;q=75 1200w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462999283-1.png&amp;w=1920&amp;q=75 1920w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462999283-1.png&amp;w=2048&amp;q=75 2048w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462999283-1.png&amp;w=3840&amp;q=75 3840w
+											"
+											src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462999283-1.png&amp;w=3840&amp;q=75"
+											decoding="async"
+											data-nimg="responsive"
+											style="
+												position: absolute;
+												top: 0;
+												left: 0;
+												bottom: 0;
+												right: 0;
+												box-sizing: border-box;
+												padding: 0;
+												border: none;
+												margin: auto;
+												display: block;
+												width: 0;
+												height: 0;
+												min-width: 100%;
+												max-width: 100%;
+												min-height: 100%;
+												max-height: 100%;
+											"
+											class="img-fluid"
+											loading="lazy" /></noscript
+								></span>
 							</li>
-							<li class="g-col-12 g-col-sm-6">
-								<div class="bullet">
-									<i class="fa-solid fa-circle-check"></i>
-								</div>
-								React
-							</li>
-							<li class="g-col-12 g-col-sm-6">
-								<div class="bullet">
-									<i class="fa-solid fa-circle-check"></i>
-								</div>
-								WP Engine
-							</li>
-							<li class="g-col-12 g-col-sm-6">
-								<div class="bullet">
-									<i class="fa-solid fa-circle-check"></i>
-								</div>
-								Headless CMS
-							</li>
-							<li class="g-col-12 g-col-sm-6">
-								<div class="bullet">
-									<i class="fa-solid fa-circle-check"></i>
-								</div>
-								Responsive Development
-							</li>
-							<li class="g-col-12 g-col-sm-6">
-								<div class="bullet">
-									<i class="fa-solid fa-circle-check"></i>
-								</div>
-								Attention to Design
+							<li
+								data-image="cG9zdDoyMjA="
+								class="has-browser-chrome"
+							>
+								<span
+									style="
+										box-sizing: border-box;
+										display: block;
+										overflow: hidden;
+										width: initial;
+										height: initial;
+										background: none;
+										opacity: 1;
+										border: 0;
+										margin: 0;
+										padding: 0;
+										position: relative;
+									"
+									><span
+										style="
+											box-sizing: border-box;
+											display: block;
+											width: initial;
+											height: initial;
+											background: none;
+											opacity: 1;
+											border: 0;
+											margin: 0;
+											padding: 0;
+											padding-top: 67.12740384615384%;
+										"
+									></span
+									><img
+										alt=""
+										src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+										decoding="async"
+										data-nimg="responsive"
+										class="img-fluid"
+										style="
+											position: absolute;
+											top: 0;
+											left: 0;
+											bottom: 0;
+											right: 0;
+											box-sizing: border-box;
+											padding: 0;
+											border: none;
+											margin: auto;
+											display: block;
+											width: 0;
+											height: 0;
+											min-width: 100%;
+											max-width: 100%;
+											min-height: 100%;
+											max-height: 100%;
+										" /><noscript
+										><img
+											alt=""
+											sizes="100vw"
+											srcset="
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462819920-1.png&amp;w=640&amp;q=75   640w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462819920-1.png&amp;w=750&amp;q=75   750w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462819920-1.png&amp;w=828&amp;q=75   828w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462819920-1.png&amp;w=1080&amp;q=75 1080w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462819920-1.png&amp;w=1200&amp;q=75 1200w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462819920-1.png&amp;w=1920&amp;q=75 1920w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462819920-1.png&amp;w=2048&amp;q=75 2048w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462819920-1.png&amp;w=3840&amp;q=75 3840w
+											"
+											src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462819920-1.png&amp;w=3840&amp;q=75"
+											decoding="async"
+											data-nimg="responsive"
+											style="
+												position: absolute;
+												top: 0;
+												left: 0;
+												bottom: 0;
+												right: 0;
+												box-sizing: border-box;
+												padding: 0;
+												border: none;
+												margin: auto;
+												display: block;
+												width: 0;
+												height: 0;
+												min-width: 100%;
+												max-width: 100%;
+												min-height: 100%;
+												max-height: 100%;
+											"
+											class="img-fluid"
+											loading="lazy" /></noscript
+								></span>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="content-section has-tinted-background contact-form">
+		<section
+			class="content-section case-study-content-section project-technology"
+		>
+			<div class="container">
+				<div class="row content-section">
+					<article class="col-md-10 project-technology-text">
+						<h2>Technology and Build Choices</h2>
+						<p>
+							We initially did the website in WordPress, and it
+							has stuck with WordPress as the CMS of choice
+							throughout its lifetime. We had continually updated
+							the website's functionality and design as WordPress
+							itself evolved. The latest redesign we completed was
+							a near complete overhaul of how pages and posts were
+							managed in the backend. I moved the website over to
+							the Gutenberg Block Editor and was required to
+							create a large number of custom blocks that would
+							replace more traditional WordPress Advanced Custom
+							Fields.
+						</p>
+						<p>
+							To create features like the
+							<a
+								href="https://longislandsoundstudy.net/ecosystem-target-indicators/lis-hypoxia/"
+								>Ecosystem Targets and Supporting Indicators</a
+							>, and the
+							<a
+								href="https://longislandsoundstudy.net/program-implementation-and-progress/"
+								>interactive projects data table</a
+							>, we used third party libraries like Highcharts.js
+							and DataTables.js.
+						</p>
+						<p>
+							The LISS has a lot of different types of data and
+							content at its disposal, and we wanted them to be
+							able to use it liberally across the website. I
+							created custom modules and WordPress blocks that
+							allowed for custom photo galleries, responsive video
+							embeds, photo slideshows, tabbed interfaces, custom
+							interactive maps and more. These were written using
+							modern Javascript, CSS, and HTML, then implemented
+							in the WordPress PHP environment as addon plugins or
+							theme additions.
+						</p>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section
+			class="content-section case-study-content-section project-development-process"
+		>
+			<div class="container">
+				<div class="row content-section">
+					<article class="col-md-10 project-development-process-text">
+						<h2>Development Process and Challenges Faced</h2>
+						<p>
+							During the latest buildout of the website, I was
+							tasked with migrating the WordPress site to a better
+							hosting environment. It had completely outgrown its
+							previous shared hosting environment and was running
+							into things like major performance issues and 500
+							server errors. I accomplished this by cloning the
+							website to the new web host, and then made sure it
+							was up and running before the next version of the
+							site began development.
+						</p>
+						<p>
+							I cloned the entire website to my local development
+							environment and would periodically push the changes
+							up to the new web host's corresponding online
+							development environment for the client to review.
+							Due to the project's large size, I used code version
+							control to keep track of daily work and changes to
+							the code. I set up a repo for both the main
+							WordPress theme as well as one for each of the
+							custom WordPress plugins I was developing for the
+							next generation website. This was handy as I could
+							work on the same codebase from multiple different
+							locations and computers by just pulling the latest
+							changes and continuing on with work.
+						</p>
+						<p>
+							I developed a fully reusable dynamic sidebar widget
+							system for the website using native custom post
+							types and unique data fields for each widget type.
+							The widgets could be included in sidebars on both
+							pages, posts and other types of content. The single
+							widget repository in the backend made updating the
+							widget content in all locations the widget was used,
+							a snap.
+						</p>
+						<p>
+							I worked with the client to extensively test each of
+							the new features and ensured as much backwards
+							compatibility was built in as necessary for the
+							transition to the new editing experience and made
+							sure it was as smooth as possible. Upon completion
+							of a suitable MVP, the client worked on the content
+							side of things simultaneously as I worked on all the
+							features.
+						</p>
+						<p>
+							Multiple times during the development process, I had
+							meetings with the client to go over how to use the
+							new functionality that we developed as he was
+							populating content. Overall, the process went pretty
+							smoothly.
+						</p>
+						<p>
+							Since the initial launch of this new version of the
+							website, I have collaborated with the client on a
+							number of new functionality additions and merged
+							them seamlessly into the production website. The
+							additional work was very smooth thanks to the new
+							development environments we set up during the
+							initial build, which saved the client a lot of time
+							and money.
+						</p>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section
+			class="content-section case-study-content-section case-study-mobile-slider"
+		>
+			<div class="container">
+				<div class="row">
+					<div class="col case-study-mobile-slider-wrapper">
+						<div
+							class="mobile-screens-slider flickity-enabled is-draggable"
+							tabindex="0"
+						>
+							<div
+								class="flickity-viewport"
+								style="height: 667px; touch-action: pan-y"
+							>
+								<div
+									class="flickity-slider"
+									style="left: 0px; transform: translateX(0%)"
+								>
+									<div
+										class="single-mobile-screen is-selected"
+										style="
+											position: absolute;
+											left: 0px;
+											transform: translateX(0%);
+										"
+									>
+										<div class="card">
+											<img
+												src="https://admin.chriswho.codes/wp-content/uploads/2022/05/Long-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound-mobile.png"
+												srcset="
+													https://admin.chriswho.codes/wp-content/uploads/2022/05/Long-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound-mobile.png         393w,
+													https://admin.chriswho.codes/wp-content/uploads/2022/05/Long-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound-mobile-139x300.png 139w,
+													https://admin.chriswho.codes/wp-content/uploads/2022/05/Long-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound-mobile-300x650.png 300w
+												"
+												alt=""
+												class="img-fluid"
+											/><span
+												style="
+													box-sizing: border-box;
+													display: block;
+													overflow: hidden;
+													width: initial;
+													height: initial;
+													background: none;
+													opacity: 1;
+													border: 0;
+													margin: 0;
+													padding: 0;
+													position: relative;
+												"
+												><span
+													style="
+														box-sizing: border-box;
+														display: block;
+														width: initial;
+														height: initial;
+														background: none;
+														opacity: 1;
+														border: 0;
+														margin: 0;
+														padding: 0;
+														padding-top: 216.53944020356235%;
+													"
+												></span
+												><img
+													alt=""
+													src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+													decoding="async"
+													data-nimg="responsive"
+													class="img-fluid"
+													style="
+														position: absolute;
+														top: 0;
+														left: 0;
+														bottom: 0;
+														right: 0;
+														box-sizing: border-box;
+														padding: 0;
+														border: none;
+														margin: auto;
+														display: block;
+														width: 0;
+														height: 0;
+														min-width: 100%;
+														max-width: 100%;
+														min-height: 100%;
+														max-height: 100%;
+													" /><noscript
+													><img
+														alt=""
+														sizes="100vw"
+														srcset="
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound-mobile.png&amp;w=640&amp;q=75   640w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound-mobile.png&amp;w=750&amp;q=75   750w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound-mobile.png&amp;w=828&amp;q=75   828w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound-mobile.png&amp;w=1080&amp;q=75 1080w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound-mobile.png&amp;w=1200&amp;q=75 1200w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound-mobile.png&amp;w=1920&amp;q=75 1920w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound-mobile.png&amp;w=2048&amp;q=75 2048w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound-mobile.png&amp;w=3840&amp;q=75 3840w
+														"
+														src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2FLong-Island-Sound-Study-A-Partnership-to-Restore-and-Protect-the-Sound-mobile.png&amp;w=3840&amp;q=75"
+														decoding="async"
+														data-nimg="responsive"
+														style="
+															position: absolute;
+															top: 0;
+															left: 0;
+															bottom: 0;
+															right: 0;
+															box-sizing: border-box;
+															padding: 0;
+															border: none;
+															margin: auto;
+															display: block;
+															width: 0;
+															height: 0;
+															min-width: 100%;
+															max-width: 100%;
+															min-height: 100%;
+															max-height: 100%;
+														"
+														class="img-fluid"
+														loading="lazy" /></noscript
+											></span>
+										</div>
+									</div>
+									<div
+										class="single-mobile-screen"
+										style="
+											position: absolute;
+											left: 0px;
+											transform: translateX(122.67%);
+										"
+										aria-hidden="true"
+									>
+										<div class="card">
+											<img
+												src="https://admin.chriswho.codes/wp-content/uploads/2022/05/screely-1661463420712.png"
+												srcset="
+													https://admin.chriswho.codes/wp-content/uploads/2022/05/screely-1661463420712.png         375w,
+													https://admin.chriswho.codes/wp-content/uploads/2022/05/screely-1661463420712-169x300.png 169w,
+													https://admin.chriswho.codes/wp-content/uploads/2022/05/screely-1661463420712-300x534.png 300w
+												"
+												alt=""
+												class="img-fluid"
+											/><span
+												style="
+													box-sizing: border-box;
+													display: block;
+													overflow: hidden;
+													width: initial;
+													height: initial;
+													background: none;
+													opacity: 1;
+													border: 0;
+													margin: 0;
+													padding: 0;
+													position: relative;
+												"
+												><span
+													style="
+														box-sizing: border-box;
+														display: block;
+														width: initial;
+														height: initial;
+														background: none;
+														opacity: 1;
+														border: 0;
+														margin: 0;
+														padding: 0;
+														padding-top: 177.86666666666667%;
+													"
+												></span
+												><img
+													alt=""
+													src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463420712.png&amp;w=3840&amp;q=75"
+													decoding="async"
+													data-nimg="responsive"
+													class="img-fluid"
+													style="
+														position: absolute;
+														top: 0;
+														left: 0;
+														bottom: 0;
+														right: 0;
+														box-sizing: border-box;
+														padding: 0;
+														border: none;
+														margin: auto;
+														display: block;
+														width: 0;
+														height: 0;
+														min-width: 100%;
+														max-width: 100%;
+														min-height: 100%;
+														max-height: 100%;
+													"
+													sizes="100vw"
+													srcset="
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463420712.png&amp;w=640&amp;q=75   640w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463420712.png&amp;w=750&amp;q=75   750w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463420712.png&amp;w=828&amp;q=75   828w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463420712.png&amp;w=1080&amp;q=75 1080w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463420712.png&amp;w=1200&amp;q=75 1200w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463420712.png&amp;w=1920&amp;q=75 1920w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463420712.png&amp;w=2048&amp;q=75 2048w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463420712.png&amp;w=3840&amp;q=75 3840w
+													" /><noscript
+													><img
+														alt=""
+														sizes="100vw"
+														srcset="
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463420712.png&amp;w=640&amp;q=75   640w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463420712.png&amp;w=750&amp;q=75   750w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463420712.png&amp;w=828&amp;q=75   828w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463420712.png&amp;w=1080&amp;q=75 1080w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463420712.png&amp;w=1200&amp;q=75 1200w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463420712.png&amp;w=1920&amp;q=75 1920w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463420712.png&amp;w=2048&amp;q=75 2048w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463420712.png&amp;w=3840&amp;q=75 3840w
+														"
+														src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463420712.png&amp;w=3840&amp;q=75"
+														decoding="async"
+														data-nimg="responsive"
+														style="
+															position: absolute;
+															top: 0;
+															left: 0;
+															bottom: 0;
+															right: 0;
+															box-sizing: border-box;
+															padding: 0;
+															border: none;
+															margin: auto;
+															display: block;
+															width: 0;
+															height: 0;
+															min-width: 100%;
+															max-width: 100%;
+															min-height: 100%;
+															max-height: 100%;
+														"
+														class="img-fluid"
+														loading="lazy" /></noscript
+											></span>
+										</div>
+									</div>
+									<div
+										class="single-mobile-screen"
+										style="
+											position: absolute;
+											left: 0px;
+											transform: translateX(245.33%);
+										"
+										aria-hidden="true"
+									>
+										<div class="card">
+											<img
+												src="https://admin.chriswho.codes/wp-content/uploads/2022/05/screely-1661463369502.png"
+												srcset="
+													https://admin.chriswho.codes/wp-content/uploads/2022/05/screely-1661463369502.png         375w,
+													https://admin.chriswho.codes/wp-content/uploads/2022/05/screely-1661463369502-169x300.png 169w,
+													https://admin.chriswho.codes/wp-content/uploads/2022/05/screely-1661463369502-300x534.png 300w
+												"
+												alt=""
+												class="img-fluid"
+											/><span
+												style="
+													box-sizing: border-box;
+													display: block;
+													overflow: hidden;
+													width: initial;
+													height: initial;
+													background: none;
+													opacity: 1;
+													border: 0;
+													margin: 0;
+													padding: 0;
+													position: relative;
+												"
+												><span
+													style="
+														box-sizing: border-box;
+														display: block;
+														width: initial;
+														height: initial;
+														background: none;
+														opacity: 1;
+														border: 0;
+														margin: 0;
+														padding: 0;
+														padding-top: 177.86666666666667%;
+													"
+												></span
+												><img
+													alt=""
+													src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463369502.png&amp;w=3840&amp;q=75"
+													decoding="async"
+													data-nimg="responsive"
+													class="img-fluid"
+													style="
+														position: absolute;
+														top: 0;
+														left: 0;
+														bottom: 0;
+														right: 0;
+														box-sizing: border-box;
+														padding: 0;
+														border: none;
+														margin: auto;
+														display: block;
+														width: 0;
+														height: 0;
+														min-width: 100%;
+														max-width: 100%;
+														min-height: 100%;
+														max-height: 100%;
+													"
+													sizes="100vw"
+													srcset="
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463369502.png&amp;w=640&amp;q=75   640w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463369502.png&amp;w=750&amp;q=75   750w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463369502.png&amp;w=828&amp;q=75   828w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463369502.png&amp;w=1080&amp;q=75 1080w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463369502.png&amp;w=1200&amp;q=75 1200w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463369502.png&amp;w=1920&amp;q=75 1920w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463369502.png&amp;w=2048&amp;q=75 2048w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463369502.png&amp;w=3840&amp;q=75 3840w
+													" /><noscript
+													><img
+														alt=""
+														sizes="100vw"
+														srcset="
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463369502.png&amp;w=640&amp;q=75   640w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463369502.png&amp;w=750&amp;q=75   750w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463369502.png&amp;w=828&amp;q=75   828w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463369502.png&amp;w=1080&amp;q=75 1080w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463369502.png&amp;w=1200&amp;q=75 1200w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463369502.png&amp;w=1920&amp;q=75 1920w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463369502.png&amp;w=2048&amp;q=75 2048w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463369502.png&amp;w=3840&amp;q=75 3840w
+														"
+														src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463369502.png&amp;w=3840&amp;q=75"
+														decoding="async"
+														data-nimg="responsive"
+														style="
+															position: absolute;
+															top: 0;
+															left: 0;
+															bottom: 0;
+															right: 0;
+															box-sizing: border-box;
+															padding: 0;
+															border: none;
+															margin: auto;
+															display: block;
+															width: 0;
+															height: 0;
+															min-width: 100%;
+															max-width: 100%;
+															min-height: 100%;
+															max-height: 100%;
+														"
+														class="img-fluid"
+														loading="lazy" /></noscript
+											></span>
+										</div>
+									</div>
+									<div
+										class="single-mobile-screen"
+										style="
+											position: absolute;
+											left: 0px;
+											transform: translateX(368%);
+										"
+										aria-hidden="true"
+									>
+										<div class="card">
+											<img
+												src="https://admin.chriswho.codes/wp-content/uploads/2022/05/screely-1661463383986.png"
+												srcset="
+													https://admin.chriswho.codes/wp-content/uploads/2022/05/screely-1661463383986.png         375w,
+													https://admin.chriswho.codes/wp-content/uploads/2022/05/screely-1661463383986-169x300.png 169w,
+													https://admin.chriswho.codes/wp-content/uploads/2022/05/screely-1661463383986-300x534.png 300w
+												"
+												alt=""
+												class="img-fluid"
+											/><span
+												style="
+													box-sizing: border-box;
+													display: block;
+													overflow: hidden;
+													width: initial;
+													height: initial;
+													background: none;
+													opacity: 1;
+													border: 0;
+													margin: 0;
+													padding: 0;
+													position: relative;
+												"
+												><span
+													style="
+														box-sizing: border-box;
+														display: block;
+														width: initial;
+														height: initial;
+														background: none;
+														opacity: 1;
+														border: 0;
+														margin: 0;
+														padding: 0;
+														padding-top: 177.86666666666667%;
+													"
+												></span
+												><img
+													alt=""
+													src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463383986.png&amp;w=3840&amp;q=75"
+													decoding="async"
+													data-nimg="responsive"
+													class="img-fluid"
+													style="
+														position: absolute;
+														top: 0;
+														left: 0;
+														bottom: 0;
+														right: 0;
+														box-sizing: border-box;
+														padding: 0;
+														border: none;
+														margin: auto;
+														display: block;
+														width: 0;
+														height: 0;
+														min-width: 100%;
+														max-width: 100%;
+														min-height: 100%;
+														max-height: 100%;
+													"
+													sizes="100vw"
+													srcset="
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463383986.png&amp;w=640&amp;q=75   640w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463383986.png&amp;w=750&amp;q=75   750w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463383986.png&amp;w=828&amp;q=75   828w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463383986.png&amp;w=1080&amp;q=75 1080w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463383986.png&amp;w=1200&amp;q=75 1200w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463383986.png&amp;w=1920&amp;q=75 1920w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463383986.png&amp;w=2048&amp;q=75 2048w,
+														/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463383986.png&amp;w=3840&amp;q=75 3840w
+													" /><noscript
+													><img
+														alt=""
+														sizes="100vw"
+														srcset="
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463383986.png&amp;w=640&amp;q=75   640w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463383986.png&amp;w=750&amp;q=75   750w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463383986.png&amp;w=828&amp;q=75   828w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463383986.png&amp;w=1080&amp;q=75 1080w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463383986.png&amp;w=1200&amp;q=75 1200w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463383986.png&amp;w=1920&amp;q=75 1920w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463383986.png&amp;w=2048&amp;q=75 2048w,
+															/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463383986.png&amp;w=3840&amp;q=75 3840w
+														"
+														src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661463383986.png&amp;w=3840&amp;q=75"
+														decoding="async"
+														data-nimg="responsive"
+														style="
+															position: absolute;
+															top: 0;
+															left: 0;
+															bottom: 0;
+															right: 0;
+															box-sizing: border-box;
+															padding: 0;
+															border: none;
+															margin: auto;
+															display: block;
+															width: 0;
+															height: 0;
+															min-width: 100%;
+															max-width: 100%;
+															min-height: 100%;
+															max-height: 100%;
+														"
+														class="img-fluid"
+														loading="lazy" /></noscript
+											></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="content-section case-study-content-section has-blue-bg final-image"
+		>
+			<div class="container">
+				<div class="row content-section">
+					<div class="col project-goals-featured-image">
+						<div class="has-browser-chrome featured-image-wrapper">
+							<span
+								style="
+									box-sizing: border-box;
+									display: block;
+									overflow: hidden;
+									width: initial;
+									height: initial;
+									background: none;
+									opacity: 1;
+									border: 0;
+									margin: 0;
+									padding: 0;
+									position: relative;
+								"
+								><span
+									style="
+										box-sizing: border-box;
+										display: block;
+										width: initial;
+										height: initial;
+										background: none;
+										opacity: 1;
+										border: 0;
+										margin: 0;
+										padding: 0;
+										padding-top: 67.12740384615384%;
+									"
+								></span
+								><img
+									alt=""
+									src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462659006-1.png&amp;w=3840&amp;q=75"
+									decoding="async"
+									data-nimg="responsive"
+									class="img-fluid"
+									style="
+										position: absolute;
+										top: 0;
+										left: 0;
+										bottom: 0;
+										right: 0;
+										box-sizing: border-box;
+										padding: 0;
+										border: none;
+										margin: auto;
+										display: block;
+										width: 0;
+										height: 0;
+										min-width: 100%;
+										max-width: 100%;
+										min-height: 100%;
+										max-height: 100%;
+									"
+									sizes="100vw"
+									srcset="
+										/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462659006-1.png&amp;w=640&amp;q=75   640w,
+										/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462659006-1.png&amp;w=750&amp;q=75   750w,
+										/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462659006-1.png&amp;w=828&amp;q=75   828w,
+										/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462659006-1.png&amp;w=1080&amp;q=75 1080w,
+										/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462659006-1.png&amp;w=1200&amp;q=75 1200w,
+										/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462659006-1.png&amp;w=1920&amp;q=75 1920w,
+										/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462659006-1.png&amp;w=2048&amp;q=75 2048w,
+										/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462659006-1.png&amp;w=3840&amp;q=75 3840w
+									" /><noscript
+									><img
+										alt=""
+										sizes="100vw"
+										srcset="
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462659006-1.png&amp;w=640&amp;q=75   640w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462659006-1.png&amp;w=750&amp;q=75   750w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462659006-1.png&amp;w=828&amp;q=75   828w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462659006-1.png&amp;w=1080&amp;q=75 1080w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462659006-1.png&amp;w=1200&amp;q=75 1200w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462659006-1.png&amp;w=1920&amp;q=75 1920w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462659006-1.png&amp;w=2048&amp;q=75 2048w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462659006-1.png&amp;w=3840&amp;q=75 3840w
+										"
+										src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F05%2Fscreely-1661462659006-1.png&amp;w=3840&amp;q=75"
+										decoding="async"
+										data-nimg="responsive"
+										style="
+											position: absolute;
+											top: 0;
+											left: 0;
+											bottom: 0;
+											right: 0;
+											box-sizing: border-box;
+											padding: 0;
+											border: none;
+											margin: auto;
+											display: block;
+											width: 0;
+											height: 0;
+											min-width: 100%;
+											max-width: 100%;
+											min-height: 100%;
+											max-height: 100%;
+										"
+										class="img-fluid"
+										loading="lazy" /></noscript
+							></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="content-section case-study-content-section project-results"
+		>
+			<div class="container">
+				<div class="row content-section">
+					<article class="col-md-10 project-results-text">
+						<h2>Project Results</h2>
+						<p>
+							The client has consistently been pleased with the
+							website and editor experience that we had created
+							for them during the redesign. The client mainly
+							manages the huge LISS website himself along with
+							some department staff members and rarely needs
+							additional help from a developer. As WordPress made
+							the move to a more WYSIWYG style editor and the
+							custom Gutenberg Editor Blocks that I developed for
+							the client, a whole new level of ease and
+							customization has been unlocked for our client that
+							requires zero coding knowledge to create attractive
+							and content rich pages.
+						</p>
+					</article>
+				</div>
+				<div class="row content-section other-projects">
+					<h2>Other Projects</h2>
+					<div class="col-md-6 related-project">
+						<div class="card d-flex flex-column">
+							<div class="related-project-image">
+								<span
+									style="
+										box-sizing: border-box;
+										display: block;
+										overflow: hidden;
+										width: initial;
+										height: initial;
+										background: none;
+										opacity: 1;
+										border: 0;
+										margin: 0;
+										padding: 0;
+										position: relative;
+									"
+									><span
+										style="
+											box-sizing: border-box;
+											display: block;
+											width: initial;
+											height: initial;
+											background: none;
+											opacity: 1;
+											border: 0;
+											margin: 0;
+											padding: 0;
+											padding-top: 81.56547183613753%;
+										"
+									></span
+									><img
+										alt=""
+										src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F10%2FClean-Water-Commitment-Reducing-Phosphorus-Pollution-in-Lake-Champlain-.png&amp;w=3840&amp;q=75"
+										decoding="async"
+										data-nimg="responsive"
+										class="img-fluid"
+										style="
+											position: absolute;
+											top: 0;
+											left: 0;
+											bottom: 0;
+											right: 0;
+											box-sizing: border-box;
+											padding: 0;
+											border: none;
+											margin: auto;
+											display: block;
+											width: 0;
+											height: 0;
+											min-width: 100%;
+											max-width: 100%;
+											min-height: 100%;
+											max-height: 100%;
+										"
+										sizes="100vw"
+										srcset="
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F10%2FClean-Water-Commitment-Reducing-Phosphorus-Pollution-in-Lake-Champlain-.png&amp;w=640&amp;q=75   640w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F10%2FClean-Water-Commitment-Reducing-Phosphorus-Pollution-in-Lake-Champlain-.png&amp;w=750&amp;q=75   750w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F10%2FClean-Water-Commitment-Reducing-Phosphorus-Pollution-in-Lake-Champlain-.png&amp;w=828&amp;q=75   828w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F10%2FClean-Water-Commitment-Reducing-Phosphorus-Pollution-in-Lake-Champlain-.png&amp;w=1080&amp;q=75 1080w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F10%2FClean-Water-Commitment-Reducing-Phosphorus-Pollution-in-Lake-Champlain-.png&amp;w=1200&amp;q=75 1200w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F10%2FClean-Water-Commitment-Reducing-Phosphorus-Pollution-in-Lake-Champlain-.png&amp;w=1920&amp;q=75 1920w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F10%2FClean-Water-Commitment-Reducing-Phosphorus-Pollution-in-Lake-Champlain-.png&amp;w=2048&amp;q=75 2048w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F10%2FClean-Water-Commitment-Reducing-Phosphorus-Pollution-in-Lake-Champlain-.png&amp;w=3840&amp;q=75 3840w
+										" /><noscript
+										><img
+											alt=""
+											sizes="100vw"
+											srcset="
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F10%2FClean-Water-Commitment-Reducing-Phosphorus-Pollution-in-Lake-Champlain-.png&amp;w=640&amp;q=75   640w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F10%2FClean-Water-Commitment-Reducing-Phosphorus-Pollution-in-Lake-Champlain-.png&amp;w=750&amp;q=75   750w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F10%2FClean-Water-Commitment-Reducing-Phosphorus-Pollution-in-Lake-Champlain-.png&amp;w=828&amp;q=75   828w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F10%2FClean-Water-Commitment-Reducing-Phosphorus-Pollution-in-Lake-Champlain-.png&amp;w=1080&amp;q=75 1080w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F10%2FClean-Water-Commitment-Reducing-Phosphorus-Pollution-in-Lake-Champlain-.png&amp;w=1200&amp;q=75 1200w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F10%2FClean-Water-Commitment-Reducing-Phosphorus-Pollution-in-Lake-Champlain-.png&amp;w=1920&amp;q=75 1920w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F10%2FClean-Water-Commitment-Reducing-Phosphorus-Pollution-in-Lake-Champlain-.png&amp;w=2048&amp;q=75 2048w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F10%2FClean-Water-Commitment-Reducing-Phosphorus-Pollution-in-Lake-Champlain-.png&amp;w=3840&amp;q=75 3840w
+											"
+											src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F10%2FClean-Water-Commitment-Reducing-Phosphorus-Pollution-in-Lake-Champlain-.png&amp;w=3840&amp;q=75"
+											decoding="async"
+											data-nimg="responsive"
+											style="
+												position: absolute;
+												top: 0;
+												left: 0;
+												bottom: 0;
+												right: 0;
+												box-sizing: border-box;
+												padding: 0;
+												border: none;
+												margin: auto;
+												display: block;
+												width: 0;
+												height: 0;
+												min-width: 100%;
+												max-width: 100%;
+												min-height: 100%;
+												max-height: 100%;
+											"
+											class="img-fluid"
+											loading="lazy" /></noscript
+								></span>
+							</div>
+							<div class="project-details-wrap">
+								<h3>Lake Champlain Clean Water Commitment</h3>
+								<article class="project-mini-description">
+									<p>
+										Clean water is the foundation of the
+										Lake Champlain Basin’s diverse
+										ecosystems, vibrant communities, and
+										recreation opportunities. This website
+										was created to coincide with LCBP's TMDL
+										anti-pollution campaign.
+									</p>
+								</article>
+								<p>
+									<a
+										class="btn btn-link btn-link-sm stretched-link has-arrow-right"
+										href="/casestudy/lake-champlain-clean-water-commitment"
+										>View Project<!-- -->
+										<svg
+											aria-hidden="true"
+											focusable="false"
+											data-prefix="fas"
+											data-icon="arrow-right"
+											class="svg-inline--fa fa-arrow-right"
+											role="img"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 448 512"
+										>
+											<path
+												fill="currentColor"
+												d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+											></path></svg
+									></a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 related-project">
+						<div class="card d-flex flex-column">
+							<div class="related-project-image">
+								<span
+									style="
+										box-sizing: border-box;
+										display: block;
+										overflow: hidden;
+										width: initial;
+										height: initial;
+										background: none;
+										opacity: 1;
+										border: 0;
+										margin: 0;
+										padding: 0;
+										position: relative;
+									"
+									><span
+										style="
+											box-sizing: border-box;
+											display: block;
+											width: initial;
+											height: initial;
+											background: none;
+											opacity: 1;
+											border: 0;
+											margin: 0;
+											padding: 0;
+											padding-top: 81.56547183613753%;
+										"
+									></span
+									><img
+										alt=""
+										src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F09%2FLake-Champlain-Basin-Program-.png&amp;w=3840&amp;q=75"
+										decoding="async"
+										data-nimg="responsive"
+										class="img-fluid"
+										style="
+											position: absolute;
+											top: 0;
+											left: 0;
+											bottom: 0;
+											right: 0;
+											box-sizing: border-box;
+											padding: 0;
+											border: none;
+											margin: auto;
+											display: block;
+											width: 0;
+											height: 0;
+											min-width: 100%;
+											max-width: 100%;
+											min-height: 100%;
+											max-height: 100%;
+										"
+										sizes="100vw"
+										srcset="
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F09%2FLake-Champlain-Basin-Program-.png&amp;w=640&amp;q=75   640w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F09%2FLake-Champlain-Basin-Program-.png&amp;w=750&amp;q=75   750w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F09%2FLake-Champlain-Basin-Program-.png&amp;w=828&amp;q=75   828w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F09%2FLake-Champlain-Basin-Program-.png&amp;w=1080&amp;q=75 1080w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F09%2FLake-Champlain-Basin-Program-.png&amp;w=1200&amp;q=75 1200w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F09%2FLake-Champlain-Basin-Program-.png&amp;w=1920&amp;q=75 1920w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F09%2FLake-Champlain-Basin-Program-.png&amp;w=2048&amp;q=75 2048w,
+											/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F09%2FLake-Champlain-Basin-Program-.png&amp;w=3840&amp;q=75 3840w
+										" /><noscript
+										><img
+											alt=""
+											sizes="100vw"
+											srcset="
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F09%2FLake-Champlain-Basin-Program-.png&amp;w=640&amp;q=75   640w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F09%2FLake-Champlain-Basin-Program-.png&amp;w=750&amp;q=75   750w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F09%2FLake-Champlain-Basin-Program-.png&amp;w=828&amp;q=75   828w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F09%2FLake-Champlain-Basin-Program-.png&amp;w=1080&amp;q=75 1080w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F09%2FLake-Champlain-Basin-Program-.png&amp;w=1200&amp;q=75 1200w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F09%2FLake-Champlain-Basin-Program-.png&amp;w=1920&amp;q=75 1920w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F09%2FLake-Champlain-Basin-Program-.png&amp;w=2048&amp;q=75 2048w,
+												/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F09%2FLake-Champlain-Basin-Program-.png&amp;w=3840&amp;q=75 3840w
+											"
+											src="/_next/image?url=https%3A%2F%2Fadmin.chriswho.codes%2Fwp-content%2Fuploads%2F2022%2F09%2FLake-Champlain-Basin-Program-.png&amp;w=3840&amp;q=75"
+											decoding="async"
+											data-nimg="responsive"
+											style="
+												position: absolute;
+												top: 0;
+												left: 0;
+												bottom: 0;
+												right: 0;
+												box-sizing: border-box;
+												padding: 0;
+												border: none;
+												margin: auto;
+												display: block;
+												width: 0;
+												height: 0;
+												min-width: 100%;
+												max-width: 100%;
+												min-height: 100%;
+												max-height: 100%;
+											"
+											class="img-fluid"
+											loading="lazy" /></noscript
+								></span>
+							</div>
+							<div class="project-details-wrap">
+								<h3>Lake Champlain Basin Program</h3>
+								<article class="project-mini-description">
+									<p>
+										A modern WordPress website catered to
+										the public, scientific, and immediate
+										surrounding community of the Lake
+										Champlain.
+									</p>
+								</article>
+								<p>
+									<a
+										class="btn btn-link btn-link-sm stretched-link has-arrow-right"
+										href="/casestudy/lake-champlain-basin-program"
+										>View Project<!-- -->
+										<svg
+											aria-hidden="true"
+											focusable="false"
+											data-prefix="fas"
+											data-icon="arrow-right"
+											class="svg-inline--fa fa-arrow-right"
+											role="img"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 448 512"
+										>
+											<path
+												fill="currentColor"
+												d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+											></path></svg
+									></a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="content-section has-tinted-background contact-form"
+			id="contact"
+		>
 			<div class="container">
 				<div class="row">
 					<div class="col text-center">
 						<h2 class="section-title">
-							Let&rsquo;s build something together
+							Let’s build something together
 						</h2>
 					</div>
 				</div>
@@ -673,43 +2091,194 @@
 				>
 					<div class="col-md-4 col-lg-4 contact-photo">
 						<p tabindex="0" class="portrait-wrap">
-							<img
-								src="images/cropped-square.jpg"
-								class="img-fluid"
-								alt="Photo of me, Chris Yerkes"
-							/>
+							<span
+								style="
+									box-sizing: border-box;
+									display: block;
+									overflow: hidden;
+									width: initial;
+									height: initial;
+									background: none;
+									opacity: 1;
+									border: 0;
+									margin: 0;
+									padding: 0;
+									position: relative;
+								"
+								><span
+									style="
+										box-sizing: border-box;
+										display: block;
+										width: initial;
+										height: initial;
+										background: none;
+										opacity: 1;
+										border: 0;
+										margin: 0;
+										padding: 0;
+										padding-top: 100%;
+									"
+								></span
+								><img
+									alt="Photo of me, Chris Yerkes"
+									src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+									decoding="async"
+									data-nimg="responsive"
+									class="img-fluid"
+									style="
+										position: absolute;
+										top: 0;
+										left: 0;
+										bottom: 0;
+										right: 0;
+										box-sizing: border-box;
+										padding: 0;
+										border: none;
+										margin: auto;
+										display: block;
+										width: 0;
+										height: 0;
+										min-width: 100%;
+										max-width: 100%;
+										min-height: 100%;
+										max-height: 100%;
+									" /><noscript
+									><img
+										alt="Photo of me, Chris Yerkes"
+										sizes="100vw"
+										srcset="
+											/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcropped-square.5892286c.jpg&amp;w=640&amp;q=75   640w,
+											/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcropped-square.5892286c.jpg&amp;w=750&amp;q=75   750w,
+											/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcropped-square.5892286c.jpg&amp;w=828&amp;q=75   828w,
+											/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcropped-square.5892286c.jpg&amp;w=1080&amp;q=75 1080w,
+											/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcropped-square.5892286c.jpg&amp;w=1200&amp;q=75 1200w,
+											/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcropped-square.5892286c.jpg&amp;w=1920&amp;q=75 1920w,
+											/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcropped-square.5892286c.jpg&amp;w=2048&amp;q=75 2048w,
+											/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcropped-square.5892286c.jpg&amp;w=3840&amp;q=75 3840w
+										"
+										src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcropped-square.5892286c.jpg&amp;w=3840&amp;q=75"
+										decoding="async"
+										data-nimg="responsive"
+										style="
+											position: absolute;
+											top: 0;
+											left: 0;
+											bottom: 0;
+											right: 0;
+											box-sizing: border-box;
+											padding: 0;
+											border: none;
+											margin: auto;
+											display: block;
+											width: 0;
+											height: 0;
+											min-width: 100%;
+											max-width: 100%;
+											min-height: 100%;
+											max-height: 100%;
+										"
+										class="img-fluid"
+										loading="lazy" /></noscript
+							></span>
 						</p>
 						<ul
 							class="nav social-nav flex-column flex-sm-row align-items-center text-links"
 						>
 							<li class="nav-item">
-								<a href="#" class="nav-link"
-									>LinkedIn
-									<i class="fa-solid fa-arrow-right"></i
+								<a
+									href="https://www.linkedin.com/in/chrisyerkes/"
+									target="_blank"
+									class="nav-link"
+									>LinkedIn<!-- -->
+									<svg
+										aria-hidden="true"
+										focusable="false"
+										data-prefix="fas"
+										data-icon="arrow-right"
+										class="svg-inline--fa fa-arrow-right"
+										role="img"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 448 512"
+									>
+										<path
+											fill="currentColor"
+											d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+										></path></svg
 								></a>
 							</li>
 							<li class="nav-item">
-								<a href="#" class="nav-link"
-									>CodePen
-									<i class="fa-solid fa-arrow-right"></i
+								<a
+									href="https://codepen.io/chrisyerkes"
+									target="_blank"
+									class="nav-link"
+									>CodePen<!-- -->
+									<svg
+										aria-hidden="true"
+										focusable="false"
+										data-prefix="fas"
+										data-icon="arrow-right"
+										class="svg-inline--fa fa-arrow-right"
+										role="img"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 448 512"
+									>
+										<path
+											fill="currentColor"
+											d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+										></path></svg
 								></a>
 							</li>
 							<li class="nav-item">
-								<a href="#" class="nav-link"
-									>GitHub
-									<i class="fa-solid fa-arrow-right"></i
+								<a
+									href="https://github.com/chrisyerkes"
+									target="_blank"
+									class="nav-link"
+									>GitHub<!-- -->
+									<svg
+										aria-hidden="true"
+										focusable="false"
+										data-prefix="fas"
+										data-icon="arrow-right"
+										class="svg-inline--fa fa-arrow-right"
+										role="img"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 448 512"
+									>
+										<path
+											fill="currentColor"
+											d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+										></path></svg
 								></a>
 							</li>
 							<li class="nav-item">
-								<a href="#" class="nav-link"
-									>Twitter
-									<i class="fa-solid fa-arrow-right"></i
+								<a
+									href="https://twitter.com/chrisyerkes"
+									target="_blank"
+									class="nav-link"
+									>Twitter<!-- -->
+									<svg
+										aria-hidden="true"
+										focusable="false"
+										data-prefix="fas"
+										data-icon="arrow-right"
+										class="svg-inline--fa fa-arrow-right"
+										role="img"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 448 512"
+									>
+										<path
+											fill="currentColor"
+											d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+										></path></svg
 								></a>
 							</li>
 						</ul>
 					</div>
 					<div class="col-md-7 col-lg-7 mb-5 mb-md-0 form-container">
-						<form>
+						<form
+							action="https://formsubmit.co/71a0a09876198c4be70f564838b777a2"
+							method="POST"
+						>
 							<div class="row">
 								<div class="col-sm-6 mb-4">
 									<div class="form-floating">
@@ -718,10 +2287,10 @@
 											class="form-control"
 											id="inputName1"
 											placeholder="Your name..."
-										/>
-										<label for="inputName1">
-											Your name
-										</label>
+											name="name"
+										/><label for="inputName1"
+											>Your name</label
+										>
 									</div>
 								</div>
 								<div class="col-sm-6 mb-4">
@@ -731,8 +2300,8 @@
 											class="form-control"
 											id="inputEmail1"
 											placeholder="name@example.com"
-										/>
-										<label for="inputEmail1"
+											name="email"
+										/><label for="inputEmail1"
 											>Your email</label
 										>
 									</div>
@@ -746,8 +2315,9 @@
 											id="inputMessage1"
 											placeholder="Your message..."
 											style="min-height: 200px"
-										></textarea>
-										<label for="inputMessage1"
+											name="message"
+										></textarea
+										><label for="inputMessage1"
 											>Your message</label
 										>
 									</div>
@@ -757,50 +2327,63 @@
 								<div class="col">
 									<div class="form-check form-switch mb-3">
 										<input
-											class="form-check-input"
 											type="checkbox"
+											class="form-check-input"
 											role="switch"
 											id="inputPermission1"
-										/>
-										<label
+											name="contact-permission"
+										/><label
 											for="inputPermission1"
 											class="form-check-label"
+											>I agree to being contacted *</label
 										>
-											I agree to being contacted
-										</label>
 									</div>
 									<div class="form-check form-switch mb-4">
 										<input
-											class="form-check-input"
 											type="checkbox"
+											class="form-check-input"
 											role="switch"
 											id="inputPermission2"
-										/>
-										<label
+											name="newsletter-signup"
+										/><label
 											for="inputPermission2"
 											class="form-check-label"
-										>
-											Yes, I would like to receive
+											>Yes, I would like to receive
 											occasional updates from Chris
-											(optional)
-										</label>
+											(optional)</label
+										>
 									</div>
-									<p class="rgb-button-wrap">
+									<p
+										class="rgb-button-wrap submit-button-wrap disabled"
+									>
 										<button
 											type="submit"
-											class="btn btn-gradient has-btn-gradient-2"
+											class="btn btn-gradient has-btn-gradient-2 submit-button disabled"
 										>
-											Send a message
-										</button>
-										<span></span>
+											Send a message</button
+										><span></span>
 									</p>
 								</div>
 							</div>
+							<input
+								type="hidden"
+								name="_next"
+								value="https://chriswho.codes/thank-you"
+							/><input
+								type="hidden"
+								name="_subject"
+								value="New form submission"
+							/><input
+								type="text"
+								name="_honey"
+								style="display: none"
+							/>
 						</form>
 					</div>
 				</div>
 			</div>
 		</section>
+		<div class="overlay"></div>
 		<footer id="main-footer">
 			<div class="container">
 				<div class="row align-items-center">
@@ -809,7 +2392,9 @@
 					>
 						<p class="name">Chris Yerkes</p>
 						<p class="copyright">
-							&copy; 2022 Mops Digital, LLC. All rights reserved.
+							©
+							<!-- -->2024<!-- -->
+							Mops Digital, LLC. All rights reserved.
 						</p>
 					</div>
 					<div class="col-sm-6 footer-social-nav">
@@ -817,31 +2402,94 @@
 							class="nav justify-content-center justify-content-sm-end social-nav white-social-nav"
 						>
 							<li class="nav-item linkedin">
-								<a href="#" class="nav-link">
-									<i class="fab fa-linkedin-in"></i>
-								</a>
+								<a
+									href="https://www.linkedin.com/in/chrisyerkes/"
+									target="_blank"
+									class="nav-link"
+									><svg
+										aria-hidden="true"
+										focusable="false"
+										data-prefix="fab"
+										data-icon="linkedin-in"
+										class="svg-inline--fa fa-linkedin-in"
+										role="img"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 448 512"
+									>
+										<path
+											fill="currentColor"
+											d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+										></path></svg
+								></a>
 							</li>
 							<li class="nav-item github">
-								<a href="#" class="nav-link">
-									<i class="fab fa-github"></i>
-								</a>
+								<a
+									href="https://github.com/chrisyerkes"
+									target="_blank"
+									class="nav-link"
+									><svg
+										aria-hidden="true"
+										focusable="false"
+										data-prefix="fab"
+										data-icon="github"
+										class="svg-inline--fa fa-github"
+										role="img"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 496 512"
+									>
+										<path
+											fill="currentColor"
+											d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+										></path></svg
+								></a>
 							</li>
 							<li class="nav-item codepen">
-								<a href="#" class="nav-link">
-									<i class="fab fa-codepen"></i>
-								</a>
+								<a
+									href="https://codepen.io/chrisyerkes"
+									target="_blank"
+									class="nav-link"
+									><svg
+										aria-hidden="true"
+										focusable="false"
+										data-prefix="fab"
+										data-icon="codepen"
+										class="svg-inline--fa fa-codepen"
+										role="img"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 512 512"
+									>
+										<path
+											fill="currentColor"
+											d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"
+										></path></svg
+								></a>
 							</li>
 							<li class="nav-item twitter">
-								<a href="#" class="nav-link">
-									<i class="fab fa-twitter"></i>
-								</a>
+								<a
+									href="https://twitter.com/chrisyerkes"
+									target="_blank"
+									class="nav-link"
+									><svg
+										aria-hidden="true"
+										focusable="false"
+										data-prefix="fab"
+										data-icon="twitter"
+										class="svg-inline--fa fa-twitter"
+										role="img"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 512 512"
+									>
+										<path
+											fill="currentColor"
+											d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+										></path></svg
+								></a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</footer>
-		<div class="overlay"></div>
 
 		<script src="js/flickity.pkgd.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>

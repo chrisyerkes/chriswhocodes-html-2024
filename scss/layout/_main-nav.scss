@@ -16,7 +16,8 @@
 			position: absolute;
 			border-radius: 50%;
 			z-index: 0;
-			transition: opacity 0.75s;
+			transition: opacity 0.15s;
+			filter: blur(25px);
 			animation: gradientbg 2s linear infinite;
 		}
 		&::before {
@@ -75,14 +76,17 @@
 		&:last-child {
 			margin-right: 0;
 		}
+		.sub-menu {
+			display: none;
+		}
 	}
 }
 
-@keyframes gradientbg {
-	0% {
-		filter: blur(25px) hue-rotate(0deg);
-	}
-	100% {
-		filter: blur(25px) hue-rotate(360deg);
-	}
-}
+// @keyframes gradientbg {
+// 	0% {
+// 		filter: blur(25px) hue-rotate(0deg);
+// 	}
+// 	100% {
+// 		filter: blur(25px) hue-rotate(360deg);
+// 	}
+// }

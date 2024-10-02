@@ -1,0 +1,71 @@
+.case-study-featured-image {
+	z-index: 100;
+	position: relative;
+	@include margin-top(-450px);
+
+	.project-featured-image {
+		position: relative;
+
+		.main-image-desktop-wrapper,
+		.main-image-mobile-wrapper {
+			box-shadow:
+				0.1px 0.2px 1.1px rgba(46, 52, 68, 0.036),
+				1.1px 1.2px 3.6px rgba(46, 52, 68, 0.084),
+				1.8px 4px 16px rgba(46, 52, 68, 0.22);
+			@include border-radius(6px);
+			overflow: hidden;
+		}
+
+		.main-image-mobile-wrapper {
+			z-index: 900;
+			right: 0;
+			top: 0;
+			max-width: 100%;
+			aspect-ratio: 375 / 667;
+			box-shadow:
+				0.3px 0.8px 2px rgb(0 0 0 / 7%),
+				0.9px 2.7px 6.7px rgb(0 0 0 / 10%),
+				2px 5px 20px rgb(0 0 0 / 28%);
+
+			@include media-breakpoint-up(md) {
+				position: absolute;
+				max-width: 230px;
+				top: 150px;
+			}
+
+			@include media-breakpoint-up(lg) {
+				max-width: 300px;
+			}
+
+			@include media-breakpoint-up(xl) {
+				top: 155px;
+				max-width: 375px;
+				max-height: 667px;
+			}
+
+			@include media-breakpoint-down(md) {
+				span {
+					width: 100% !important;
+					height: 100% !important;
+
+					img {
+						width: 100% !important;
+						height: auto !important;
+						max-height: none !important;
+						bottom: unset !important;
+					}
+				}
+			}
+		}
+
+		.main-image-desktop-wrapper {
+			display: none;
+			max-width: 80%;
+			max-height: 745px;
+
+			@include media-breakpoint-up(md) {
+				display: block;
+			}
+		}
+	}
+}
